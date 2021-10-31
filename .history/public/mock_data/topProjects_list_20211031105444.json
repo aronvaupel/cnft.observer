@@ -1,0 +1,74 @@
+[
+    {
+        "avatar": "./img/author/author-1.jpg",
+        "projectname": "Monica Lucas",
+        "sales": 3.2,
+       "volume": 1000 
+    },
+    {
+        "avatar": "./img/author/author-2.jpg",
+        "projectname": "Mamie Barnett",
+        "sales": 2.8,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-3.jpg",
+        "projectname": "Nicholas Daniels",
+        "sales": 2.5,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-4.jpg",
+        "projectname": "Lori Hart",
+        "sales": 2.2,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-5.jpg",
+        "projectname": "Jimmy Wright",
+        "sales": 1.9,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-6.jpg",
+        "projectname": "Karla Sharp",
+        "sales": 1.6,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-7.jpg",
+        "projectname": "Gayle Hicks",
+        "sales": 1.5,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-8.jpg",
+        "projectname": "Claude Banks",
+        "sales": 1.3,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-9.jpg",
+        "projectname": "Franklin Greer",
+        "sales": 0.9,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-10.jpg",
+        "projectname": "Stacy Long",
+        "sales": 0.8,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-11.jpg",
+        "projectname": "Ida Chapman",
+        "sales": 0.6,
+       "volume": 1000
+    },
+    {
+        "avatar": "./img/author/author-12.jpg",
+        "projectname": "Fred Ryan",
+        "sales": 0.5,
+       "volume": 1000
+    }
+]
