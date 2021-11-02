@@ -96,11 +96,11 @@ const slidermainparticle = () => (
           duration={1200}
           triggerOnce
         >
-          <div className="row " >
+          <div className="row counter-home--wrapper">
             <div className="spacer-single"></div>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-4 mb30">
-                <div className="de_count text-left ">
+                <div className="de_count text-left counter-home">
                   <h3>
                     <span>1656243</span>
                   </h3>
@@ -108,7 +108,7 @@ const slidermainparticle = () => (
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-4 mb30">
-                <div className="de_count text-left ">
+                <div className="de_count text-left counter-home-elements">
                   <h3>
                     <span>901275</span>
                   </h3>
@@ -116,7 +116,7 @@ const slidermainparticle = () => (
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-4 mb30">
-                <div className="de_count text-left ">
+                <div className="de_count text-left counter-home">
                   <h3>
                     <span>1173</span>
                   </h3>

@@ -43,6 +43,7 @@ const GlobalStyles = createGlobalStyle`
     border-bottom: 2px solid #8364e2;
   }
   .jumbotron.no-bg{
+    overflow: hidden;
     background-repeat: repeat;
     background-size: cover;
     background-position: bottom;
@@ -184,16 +185,6 @@ const homeone = () => (
         </div>
       </div>
       <CarouselNewRedux />
-    </section>
-
-    <section className="container no-top">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-3">
-          <h2>General introduction to Cardano and CNFTs</h2>
-        </div>
-        <FeatureBox />
-      </div>
     </section>
 
     <section className="container no-top no-bottom">

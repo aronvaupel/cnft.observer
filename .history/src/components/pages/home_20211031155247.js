@@ -186,16 +186,6 @@ const homeone = () => (
       <CarouselNewRedux />
     </section>
 
-    <section className="container no-top">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-3">
-          <h2>General introduction to Cardano and CNFTs</h2>
-        </div>
-        <FeatureBox />
-      </div>
-    </section>
-
     <section className="container no-top no-bottom">
       <div className="row">
         <div className="spacer-double"></div>

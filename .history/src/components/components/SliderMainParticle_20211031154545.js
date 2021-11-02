@@ -96,7 +96,7 @@ const slidermainparticle = () => (
           duration={1200}
           triggerOnce
         >
-          <div className="row " >
+          <div className="row " id='counter-home--wrapper'>
             <div className="spacer-single"></div>
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-4 mb30">

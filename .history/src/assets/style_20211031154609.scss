@@ -4195,3 +4195,8 @@ img.img-rounded{
     width: 50%;
   }
 }
+@media only screen and (max-width: 414px) {
+  #counter-home--wrapper{
+    height:auto;
+  }
+}

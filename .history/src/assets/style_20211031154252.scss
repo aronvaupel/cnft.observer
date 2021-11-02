@@ -4195,3 +4195,13 @@ img.img-rounded{
     width: 50%;
   }
 }
+@media only screen and (max-width: 414px) {
+  .counter-home--elements{
+    width: 80px;
+    font-size: 0.5rem;;
+  }
+  #counter-home--wrapper{
+    display:flex;
+    justify-content: space-evenly;
+  }
+}
