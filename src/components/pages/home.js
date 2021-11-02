@@ -125,7 +125,7 @@ const homeone = () => (
           <span
             onClick={() => window.open("#", "_self")}
             className="btn-main inline lead"
-            id= "calendar-span"
+            id="calendar-span"
           >
             View all
           </span>
@@ -174,6 +174,16 @@ const homeone = () => (
           </span>
         </div>
       </div>
+    </section>
+
+    <section className="container no-top no-bottom">
+      <div className="row">
+        <div className="spacer-double"></div>
+        <div className="col-lg-12 mb-2">
+          <h2>Upcoming Drops</h2>
+        </div>
+      </div>
+      <CarouselUpcomingDropsRedux />
     </section>
 
     <section className="container no-top no-bottom">
