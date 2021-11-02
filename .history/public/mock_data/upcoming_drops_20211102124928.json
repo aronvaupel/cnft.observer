@@ -1,0 +1,45 @@
+[
+    {
+        "name": "art",
+        "deadline":"December, 01, 2021",
+        "previewImg": "./img/items/static-1.jpg"
+       
+    },
+     {
+        "name": "arto",
+        "deadline":"December, 02, 2021",
+        "previewImg": "./img/items/static-1.jpg"
+       
+    },
+     {
+        "name": "arte",
+        "deadline":"December, 03, 2021",
+        "previewImg": "./img/items/static-1.jpg"
+       
+    },
+     {
+        "name": "arti",
+        "deadline":"December, 04, 2021",
+        "previewImg": "./img/items/static-1.jpg"
+       
+    },
+     {
+        "name": "arta",
+        "deadline":"January, 05, 2022",
+        "previewImg": "./img/items/static-1.jpg"
+       
+    },
+     {
+        "name": "artos",
+        "deadline":"January, 06, 2022",
+        "previewImg": "./img/items/static-1.jpg"
+       
+    },
+     {
+        "name": "artibibilitiby",
+        "deadline":"February, 30, 2022",
+        "previewImg": "./img/items/static-1.jpg"
+       
+    }
+]
+  

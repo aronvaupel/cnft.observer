@@ -1,0 +1,18 @@
+[
+    {
+        "category": "art",
+        "status": "on_auction",
+        "item_type": "single_items",
+        "collections": "abstraction",
+        "deadline":"December, 30, 2021",
+        "authorLink": "#",
+        "nftLink": "#",
+        "bidLink": "#",
+        "authorImg": "./img/author/author-1.jpg",
+        "previewImg": "./img/items/static-1.jpg",
+        "title": "Example",
+        "price": "0.08 ETH",
+        "bid": "1/20",
+        "likes": 100
+    },
+  
