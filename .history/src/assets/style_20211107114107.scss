@@ -4264,38 +4264,27 @@ img.img-rounded {
 .wrapperModal-top{
   display:flex;
   justify-content: space-between;
-  align-items: space-between;
-  width:100%;
+  align-items: space-between;;
 }
 .wrapperModal-top-right{
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:100%;
 }
 
 .wrapperModal-close{
   display:flex;
   justify-content: flex-end;
-  width:100%;
 }
 
 .wrapperModal-title{
   display:flex;
   justify-content: flex-start;
-  width:100%;
 }
 
 .wrapperModal-links{
   display:flex;
   justify-content: space-evenly;
   align-items: center;
-  width:100%;
-}
-
-.wrapperModal-info{
-  display:flex;
-  justify-content: space-evenly;
-  width:100%;
 }

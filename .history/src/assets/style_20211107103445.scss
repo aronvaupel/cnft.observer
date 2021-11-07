@@ -4253,49 +4253,7 @@ img.img-rounded {
   align-items: center;
 }
 
-.wrapperModal{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.wrapperModal-top{
-  display:flex;
-  justify-content: space-between;
-  align-items: space-between;
-  width:100%;
-}
-.wrapperModal-top-right{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width:100%;
-}
-
-.wrapperModal-close{
-  display:flex;
-  justify-content: flex-end;
-  width:100%;
-}
-
-.wrapperModal-title{
-  display:flex;
-  justify-content: flex-start;
-  width:100%;
-}
-
-.wrapperModal-links{
-  display:flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width:100%;
-}
-
-.wrapperModal-info{
-  display:flex;
-  justify-content: space-evenly;
-  width:100%;
+#containerModal{
+  width: auto;
+  height:80;
 }
