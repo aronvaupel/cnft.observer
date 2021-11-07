@@ -8,6 +8,15 @@ import Clock from "./Clock";
 import { carouselUpcomingDrops } from "./constants";
 import * as selectors from "../../store/selectors";
 import { fetchUpcomingDropsBreakdown } from "../../store/actions/thunks";
+import { createGlobalStyle } from "styled-components";
+import Discord from "../../assets/svg/ic_outline-discord";
+
+const GlobalStyles = createGlobalStyle`
+.btn-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}`;
 
 const CarouselUpcomingDropsRedux = () => {
   const dispatch = useDispatch();
@@ -46,10 +55,11 @@ const CarouselUpcomingDropsRedux = () => {
               <Modal
                 show={modalId === `modal${index}`}
                 onHide={handleClose}
-                size="lg"
+                size="md"
+                className="wrapperModal"
               >
                 <Modal.Body>
-                  <div className="wrapperModal">
+                  <div className="wrapperModal-body">
                     <div className="wrapperModal-top">
                       <img
                         className="wrapperModal-img"
@@ -57,63 +67,64 @@ const CarouselUpcomingDropsRedux = () => {
                         alt={project.name}
                       />
                       <div className="wrapperModal-top-right">
-                        <div className="wrapper-close">Close</div>
+                        <div
+                          className="wrapperModal-close"
+                          onClick={handleClose}
+                        >
+                          Close
+                        </div>
                         <div className="wrapperModal-title">{project.name}</div>
                       </div>
                     </div>
 
-                    <div className="wrapperModal-links">
-                      <div className="col-lg-4 col-md-6 demo-icon-wrap">
-                        <i
-                          className="fa fa-fw"
-                          aria-hidden="true"
-                          title="Copy to use twitter"
-                        >
-                          
-                        </i>
-                        fa-twitter
-                        <span className="text-grey">[&amp;#xf099;]</span>
-                      </div>
-                      <div className="col-lg-4 col-md-6 demo-icon-wrap">
-                        <i
-                          className="fa fa-fw"
-                          aria-hidden="true"
-                          title="Copy to use twitter"
-                        >
-                          
-                        </i>
-                        fa-twitter
-                        <span className="text-grey">[&amp;#xf099;]</span>
-                      </div>
-                      <div className="col-lg-4 col-md-6 demo-icon-wrap">
-                        <i
-                          className="fa fa-fw"
-                          aria-hidden="true"
-                          title="Copy to use twitter"
-                        >
-                          
-                        </i>
-                        <span className="text-grey">[&amp;#xf099;]</span>
-                      </div>
-                    </div>
-
                     <div className="wrapperModal-info">
-                      <h4>Date</h4>
-                      <h4>Time</h4>
-                      <h4>Number</h4>
+                      <p>Drop Date: <span className='wrapperModal-info--p'> {project.dropdate} </span></p>
+                      <p>Drop Time: <span className='wrapperModal-info--p'>{project.droptime} </span></p>
+                      <p>Total NFTs: <span className='wrapperModal-info--p'>{project.nfts} </span></p>
                     </div>
 
                     <div className="wrapperModal-text">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Eligendi non quis exercitationem culpa nesciunt nihil aut
-                      nostrum explicabo reprehenderit optio amet ab temporibus
-                      asperiores quasi cupiditate. Voluptatum ducimus voluptates
-                      voluptas?
+                      {project.description}
                     </div>
                   </div>
                 </Modal.Body>
                 <Modal.Footer>
-                  <div className="wrapperModal-detailLink">More</div>
+                  <div className="wrapperModal-footer">
+                    <div className="wrapperModal-links">
+                      
+                     {project.twitter ? <div className="col-lg-4 col-md-6 demo-icon-wrap wrapperModal-links--box">
+                        <i
+                          className="fa fa-fw"
+                          aria-hidden="true"
+                          title="Copy to use twitter"
+                        >
+                          
+                        </i>
+                        <span className="text-grey">[&amp;#xf099;]</span>
+                      </div> : null} 
+
+
+                     {project.discord? <div className="col-lg-4 col-md-6 demo-icon-wrap wrapperModal-links--box">
+                        <i
+                          className="fa fa-fw box-discord"
+                          aria-hidden="true"
+                          title="Discord-Icon"
+                        >
+                          <Discord />
+                        </i>
+                        <span className="text-grey"></span>
+                      </div>
+: null} 
+
+                       {project.projectURL?<div className="col-lg-4 col-md-6 demo-icon-wrap-s2">
+                        <span aria-hidden="true" className="icon-global"></span>{" "}
+                       
+                      </div>
+ : null}
+
+                    </div>
+                    <div className="wrapperModal-detailLink btn-main">More</div>
+                  </div>
                 </Modal.Footer>
               </Modal>
             </div>
