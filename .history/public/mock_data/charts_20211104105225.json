@@ -1,0 +1,21 @@
+[
+    {
+        "options": {
+            "chart": {
+                "width":"100%",
+                "type": "bar",
+                "background": "#000"
+            }
+        },
+        "series": [{
+            "name": "Top Value",
+            "Data":[1,2,3,4]
+        }],
+        "xaxis": [{
+            "categories": [
+                "item1", "item2", "item3", "item4"
+            ]
+        }]
+        
+    },
+]

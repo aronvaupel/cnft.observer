@@ -1,0 +1,45 @@
+
+  [{
+    
+    "options": {
+      "colors":["#8364E2"],
+      "chart": {
+        "toolbar": {
+          "show": false
+        },
+        "type": "bar",
+        "background": "#26292D"
+      },
+      "xaxis": {
+      "categories": ["A", "B", "C", "D"]
+    },
+    "plotOptions": {
+      "bar": {
+        "horizontal": "false"
+      }
+    },
+    "fill": {
+      "colors": ["#8364E2","#fff"]
+    }
+    },
+    "series": [
+      {
+        "name": "Top Value",
+        "data": [1, 2, 3, 4]
+      }
+    ],
+    "title": {
+      "name": "Top Value",
+      "align": "center",
+      "margin": 20,
+      "offsetY": 20,
+      "style": {
+        "fontSize": 20
+      }
+    },
+    "dataLabels": {
+      "enabled": "false"
+    }
+  }
+]
+ 
