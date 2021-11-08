@@ -4275,6 +4275,8 @@ img.img-rounded {
  
 }
 
+
+
 .wrapperModal-top{
   display:flex;
   justify-content: space-between;
@@ -4348,7 +4350,7 @@ img.img-rounded {
 }
 
 .modal{
-  margin-top: 25vh;
+  margin-top: 120px;
 }
 
 .modal-backdrop.show {
@@ -4356,7 +4358,7 @@ img.img-rounded {
   opacity: 0.5;
 }
 
-.wrpperModal-img{
+.wrapperModal-img{
   padding-top:.5rem;
 }
 
@@ -4381,4 +4383,39 @@ img.img-rounded {
 .wrapperModal-info--p{
  color: #fff;
  font-weight: 400;
+}
+
+.wrapperChart {
+  padding: 10px;
+}
+
+.wrapperChart-inner {
+  margin:0;
+}
+
+.topProjects-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topProjects-main{
+  margin-top: 25px;
+}
+.articles-row{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.articles-item {
+  padding:10px;
+}
+
+.read-btn{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.particle-killer-div{
+  z-index: 999999;
 }

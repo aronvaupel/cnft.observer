@@ -8,6 +8,7 @@ import CarouselUpcomingDropsRedux from "../components/CarouselUpcomingDropsRedux
 import TopProjectsListRedux from "../components/TopProjectsListRedux";
 import CarouselChartsRedux from "../components/CarouselChartsRedux";
 import Footer from "../components/footer";
+import Articles from "../components/Articles";
 import { createGlobalStyle } from "styled-components";
 
 
@@ -152,6 +153,39 @@ return(
       </div>
       <CarouselUpcomingDropsRedux />
     </section>
+    
+     <section className="container no-top no-bottom">
+      <div className="row">
+        <div className="spacer-double"></div>
+        <div className="col-lg-12 mb-2">
+          <h2>Hot Collections</h2>
+        </div>
+        <div className="col-lg-12">
+          <CarouselCollectionRedux />
+        </div>
+      </div>
+    </section>
+
+<section className="container no-top no-bottom">
+      <div className="row">
+        <div className="spacer-double"></div>
+         <div className="col-lg-12 mb-2 topProjects-row">
+          <h2>Top Projects</h2>
+            <span
+            onClick={() => window.open("#", "_self")}
+            className="btn-main inline lead"
+            id="calendar-span"
+          >
+            View all
+          </span>
+        </div>
+        <div className="col-lg-12 topProjects-main" >
+          <TopProjectsListRedux />
+        </div>
+      </div>
+    </section>
+
+      
 
     <section className="container no-top no-bottom">
       <div className="row">
@@ -167,35 +201,15 @@ return(
       <div className="row">
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-3">
-          <h2>General introduction to Cardano and CNFTs</h2>
+          <h2>Basics, Tutorials, Tips and Tricks</h2>
         </div>
-        <FeatureBox />
+        <Articles />
       </div>
     </section>
 
-    <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12">
-          <h2>Top Projects</h2>
-        </div>
-        <div className="col-lg-12">
-          <TopProjectsListRedux />
-        </div>
-      </div>
-    </section>
+    
 
-    <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-2">
-          <h2>Hot Collections</h2>
-        </div>
-        <div className="col-lg-12">
-          <CarouselCollectionRedux />
-        </div>
-      </div>
-    </section>
+ 
 
     <section className="container no-top">
       <div className="row">

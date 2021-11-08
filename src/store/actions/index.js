@@ -93,6 +93,24 @@ export const getChartsDetail = asyncAction(
     'nft/GET_CHARTS_DETAIL_FAIL'
 )();
 
+export const getArticlesShowcase = asyncAction(
+    'nft/GET_ARTICLE_SHOWCASE',
+    'nft/GET_ARTICLE_SHOWCASE_SUCCESS',
+    'nft/GET_ARTICLE_SHOWCASE_FAIL'
+)();
+
+export const getArticlesBreakdown = asyncAction(
+    'nft/GET_ARTICLE_BREAKDOWN',
+    'nft/GET_ARTICLE_BREAKDOWN_SUCCESS',
+    'nft/GET_ARTICLE_BREAKDOWN_FAIL'
+)();
+
+export const getArticlesDetail = asyncAction(
+    'nft/GET_ARTICLE_DETAIL',
+    'nft/GET_ARTICLE_DETAIL_SUCCESS',
+    'nft/GET_ARTICLE_DETAIL_FAIL'
+)();
+
 
 
 export const clearNfts = action('nft/CLEAR_ALL_NFTS')();

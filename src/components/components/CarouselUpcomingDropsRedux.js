@@ -31,7 +31,7 @@ const CarouselUpcomingDropsRedux = () => {
   }, [dispatch]);
 
   return (
-    <div className="row nft">
+    <div className="row nft particle-killer-div">
       <Slider {...carouselUpcomingDrops}>
         {upcomingDrops &&
           upcomingDrops.map((project, index) => (

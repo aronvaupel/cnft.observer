@@ -12,8 +12,11 @@ export const topProjectsState = (state) => state.topProjects.topProjectsList;
 export const topProjectsRankingsState = (state) => state.topProjects.topProjectsRanking;
 export const upcomingDropsBreakdownState = (state) => state.upcomingDrops.upcomingDropsBreakdown;
 export const chartsBreakdownState = (state) => state.charts.chartsBreakdown;
-export const chartsShowcaseState = (state) => state.charts.chartShowcase;
+export const chartsShowcaseState = (state) => state.charts.chartsShowcase;
 export const chartsDetailState = (state) => state.charts.chartDetail;
+export const articlesBreakdownState = (state) => state.articles.articlesBreakdown;
+export const articlesShowcaseState = (state) => state.articles.articleshowcase;
+export const articlesDetailState = (state) => state.articles.articlesDetail;
 
 export const auctionedNfts = createSelector(nftBreakdownState, ( nfts ) => {
     if(!nfts.data) {
