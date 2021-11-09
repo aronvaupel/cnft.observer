@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import Clock from "./Clock";
 import { carouselUpcomingDrops } from "./constants";
 import * as selectors from "../../store/selectors";
@@ -16,7 +17,12 @@ const GlobalStyles = createGlobalStyle`
   display: flex;
   align-items: center;
   justify-content: center;
-}`;
+
+  
+}
+ `;
+
+ 
 
 const CarouselUpcomingDropsRedux = () => {
   const dispatch = useDispatch();
@@ -31,7 +37,7 @@ const CarouselUpcomingDropsRedux = () => {
   }, [dispatch]);
 
   return (
-    <div className="row nft particle-killer-div">
+    <div className="row nft upcomingDrops">
       <Slider {...carouselUpcomingDrops}>
         {upcomingDrops &&
           upcomingDrops.map((project, index) => (
@@ -41,10 +47,12 @@ const CarouselUpcomingDropsRedux = () => {
               key={index}
             >
               <span
-                className="box-url upcomingDropsBox"
+                className="box-url upcomingDropsBox addShadow"
                 onClick={() => setModalId(`modal${index}`)}
               >
+               
                 <img src={project.previewImg} alt="preview" className="mb20 " />
+               
                 <h4>{project.name}</h4>{" "}
                 {project.deadline && (
                   <div className="de_countdown ">

@@ -40,7 +40,7 @@ const CarouselChartsRedux = () => {
           charts.map((chart, index) => (
             <div className="itm" index={index + 1} key={index} >
               <div className="d-item" onClick={() => setModalId(`modal${index}`)}>
-                <div className="nft__item wrapperChart">
+                <div className="nft__item wrapperChart  addShadow">
                   <div className="nft__item_wrap wrapperChart-inner">
                     <div className="textWrapper">
                       <h4>{chart.options.title.name}</h4>

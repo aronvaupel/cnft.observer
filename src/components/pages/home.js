@@ -3,7 +3,7 @@ import Particle from "../components/Particle";
 import SliderMainParticle from "../components/SliderMainParticle";
 import FeatureBox from "../components/FeatureBox";
 import CarouselCollectionRedux from "../components/CarouselCollectionRedux";
-import CarouselNewRedux from "../components/CarouselNewRedux";
+import CarouselNewRedux from "../components/CarouselRecentlySoldRedux";
 import CarouselUpcomingDropsRedux from "../components/CarouselUpcomingDropsRedux";
 import TopProjectsListRedux from "../components/TopProjectsListRedux";
 import CarouselChartsRedux from "../components/CarouselChartsRedux";
@@ -79,10 +79,14 @@ const GlobalStyles = createGlobalStyle`
   }
   .de_countdown{
     border: solid 2px #8364e2;
-    position:relative;
-    right:0;
-    font-size:0.7rem;
+      .slick-slide img {
+    display: inline;
+}
+.btn-main.inline {
+    margin-right:0;
+}
   }
+
   .author_list_pp, .author_list_pp i, 
   .nft_coll_pp i, .feature-box.style-3 i, 
   footer.footer-light #form_subscribe #btn-subscribe i, 
@@ -112,12 +116,7 @@ const GlobalStyles = createGlobalStyle`
       color: #fff !important;
     }
   }
-  .slick-slide img {
-    display: inline;
-}
-.btn-main.inline {
-    margin-right:0;
-}
+
 `;
 
 const homeone = () => {
