@@ -207,7 +207,15 @@ return(
       </div>
     </section>
 
-    
+    <section className='container no-top no-bottom'>
+        <div className='row'>
+          <div className="spacer-double"></div>
+          <div className='col-lg-12 mb-2'>
+              <h2>New Items</h2>
+          </div>
+        </div> 
+        <CarouselNewRedux/>
+      </section>
 
  
 
