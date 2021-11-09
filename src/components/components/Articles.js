@@ -20,7 +20,7 @@ const Articles = () => {
             <div className="bloglist item articles-item" key={index}>
               <div className="post-content">
                 <div className="post-image">
-                  <img alt="" src={article.imgSrc} className="lazy" />
+                  <img alt="" src={article.imgSrc} className="lazy articlePicture" />
                 </div>
                 <div className="post-text">
                   <span className="p-date">{article.subheader}</span>

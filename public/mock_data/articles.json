@@ -4,7 +4,7 @@
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
 "subheader": "Basics",
-"imgSrc": "./img/news/news-5.jpg"
+"imgSrc": "./img/ownPictures/virtual.jpg"
 },
 
  {
@@ -12,7 +12,7 @@
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
 "subheader": "Tutorial",
-"imgSrc": "./img/news/news-6.jpg"
+"imgSrc": "./img/ownPictures/rocketStart.jpg"
 
 },
 
@@ -21,7 +21,7 @@
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
 "subheader": "Tips & Tricks",
-"imgSrc": "./img/news/news-1.jpg"
+"imgSrc": "./img/ownPictures/lightning.jpg"
 }
 
 ]

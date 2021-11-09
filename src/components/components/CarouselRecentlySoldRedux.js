@@ -20,7 +20,7 @@ const Outer = styled.div`
   width:100%;
 `;
 
-const CarouselNewRedux = () => {
+const CarouselRecentlySoldRedux = () => {
 
     const dispatch = useDispatch();
     const nftsState = useSelector(selectors.nftBreakdownState);
@@ -37,11 +37,6 @@ const CarouselNewRedux = () => {
             <div className='itm' index={index + 1} key={index}>
               <div className="d-item">
                 <div className="nft__item addShadow">
-                    { nft.deadline &&
-                        <div className="de_countdown">
-                            <Clock deadline={nft.deadline} />
-                        </div>
-                    }
                     <div className="author_list_pp">
                         <span onClick={()=> window.open("/home1", "_self")}>                                    
                             <img className="lazy" src={nft.authorImg} alt={nft.title}/>
@@ -78,4 +73,4 @@ const CarouselNewRedux = () => {
     );
 }
 
-export default memo(CarouselNewRedux);
+export default memo(CarouselRecentlySoldRedux);

@@ -3,7 +3,7 @@ import Particle from "../components/Particle";
 import SliderMainParticle from "../components/SliderMainParticle";
 import FeatureBox from "../components/FeatureBox";
 import CarouselCollectionRedux from "../components/CarouselCollectionRedux";
-import CarouselNewRedux from "../components/CarouselRecentlySoldRedux";
+import CarouselRecentlySoldRedux from "../components/CarouselRecentlySoldRedux";
 import CarouselUpcomingDropsRedux from "../components/CarouselUpcomingDropsRedux";
 import TopProjectsListRedux from "../components/TopProjectsListRedux";
 import CarouselChartsRedux from "../components/CarouselChartsRedux";
@@ -152,6 +152,16 @@ return(
       </div>
       <CarouselUpcomingDropsRedux />
     </section>
+
+     <section className='container no-top no-bottom'>
+        <div className='row'>
+          <div className="spacer-double"></div>
+          <div className='col-lg-12 mb-2'>
+              <h2>Recently Sold</h2>
+          </div>
+        </div> 
+        <CarouselRecentlySoldRedux/>
+      </section>
     
      <section className="container no-top no-bottom">
       <div className="row">
@@ -190,13 +200,13 @@ return(
       <div className="row">
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-2">
-          <h2>Top Charts</h2>
+          <h2>Statistics</h2>
         </div>
       </div>
       <CarouselChartsRedux />
     </section>
 
-    <section className="container no-top">
+    <section className="container no-top no-bottom">
       <div className="row">
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-3">
@@ -205,29 +215,6 @@ return(
         <Articles />
       </div>
     </section>
-
-    <section className='container no-top no-bottom'>
-        <div className='row'>
-          <div className="spacer-double"></div>
-          <div className='col-lg-12 mb-2'>
-              <h2>New Items</h2>
-          </div>
-        </div> 
-        <CarouselNewRedux/>
-      </section>
-
- 
-
-    <section className="container no-top">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-3">
-          <h2>Create and Sell Now</h2>
-        </div>
-        <FeatureBox />
-      </div>
-    </section>
-
     <Footer />
   </div>)
 };

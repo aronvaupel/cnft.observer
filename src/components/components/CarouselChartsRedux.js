@@ -16,7 +16,7 @@ const Outer = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 15px;
   overflow: hidden;
   border-radius: 8px;
 `;
@@ -40,7 +40,7 @@ const CarouselChartsRedux = () => {
           charts.map((chart, index) => (
             <div className="itm" index={index + 1} key={index} >
               <div className="d-item" onClick={() => setModalId(`modal${index}`)}>
-                <div className="nft__item wrapperChart  addShadow">
+                <div className="nft__item wrapperChart addShadow">
                   <div className="nft__item_wrap wrapperChart-inner">
                     <div className="textWrapper">
                       <h4>{chart.options.title.name}</h4>
