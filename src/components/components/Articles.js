@@ -13,7 +13,7 @@ const Articles = () => {
   }, [dispatch]);
 
   return (
-    <div className="row">
+    <div className="row " >
       <div className="col-lg-4 col-md-6 mb30 articles-row">
         {articles &&
           articles.map((article, index) => (

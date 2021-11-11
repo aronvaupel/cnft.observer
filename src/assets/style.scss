@@ -4217,7 +4217,7 @@ img.img-rounded {
 
 @media only screen and (max-width: 414px) {
   #calendar-span {
-    margin-top: 12px;
+    align-items: flex-end;
     width: 50%;
   }
 }
@@ -4461,4 +4461,24 @@ img.img-rounded {
 .link-color:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+
+ 
+
+@media only screen and (max-width: 768px) {
+  .articles-row {
+    flex-direction: column;
+  }
+  .addShadow{
+   margin-left:   5px ;
+   margin-right: 5px;
+  }
+ 
+ .carousel-responsiveness{
+   margin:  0 5px 0 5px;
+  }
+ 
+.slick-dots{
+  visibility: hidden;
+}
 }

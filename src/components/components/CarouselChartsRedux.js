@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { carouselNew } from "./constants";
+import { carouselChart } from "./constants";
 import * as selectors from "../../store/selectors";
 import { fetchChartsBreakdown } from "../../store/actions/thunks";
 import Chart from "react-apexcharts";
@@ -35,12 +35,12 @@ const CarouselChartsRedux = () => {
 
   return (
     <div className="nft">
-      <Slider {...carouselNew}>
+      <Slider {...carouselChart}>
         {charts &&
           charts.map((chart, index) => (
             <div className="itm" index={index + 1} key={index} >
-              <div className="d-item" onClick={() => setModalId(`modal${index}`)}>
-                <div className="nft__item wrapperChart addShadow">
+              <div className="d-item " onClick={() => setModalId(`modal${index}`)}>
+                <div className="nft__item wrapperChart addShadow ">
                   <div className="nft__item_wrap wrapperChart-inner">
                     <div className="textWrapper">
                       <h4>{chart.options.title.name}</h4>

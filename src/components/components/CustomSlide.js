@@ -3,7 +3,7 @@ import React, { memo } from "react";
 const CustomSlide = ({ index, avatar, banner, username, uniqueId }) => {
   return (
     <div className='itm' index={index}>
-      <div className="nft_coll addShadow border-top-color-fix bg-lightgrey" id="border-top-color-fix">
+      <div className="nft_coll addShadow border-top-color-fix bg-lightgrey" id="border-top-color-fix border-top-responsive">
           <div className="nft_wrap addPadding">
               <span ><img src={banner} className="lazy img-fluid addBorderRadius addShadow" alt=""/></span>
           </div>
