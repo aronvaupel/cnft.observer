@@ -28,7 +28,7 @@ const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
                 <li key={index}>
                     <TopProjects project={project} />
                 </li>
-            )).slice(0,5)}
+            )).slice(0,10)}
             </ol>
         </div>
     );
