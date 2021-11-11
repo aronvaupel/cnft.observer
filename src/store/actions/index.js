@@ -111,6 +111,24 @@ export const getArticlesDetail = asyncAction(
     'nft/GET_ARTICLE_DETAIL_FAIL'
 )();
 
+export const getNewsShowcase = asyncAction(
+    'nft/GET_NEWS_SHOWCASE',
+    'nft/GET_NEWS_SHOWCASE_SUCCESS',
+    'nft/GET_NEWS_SHOWCASE_FAIL'
+)();
+
+export const getNewsBreakdown = asyncAction(
+    'nft/GET_NEWS_BREAKDOWN',
+    'nft/GET_NEWS_BREAKDOWN_SUCCESS',
+    'nft/GET_NEWS_BREAKDOWN_FAIL'
+)();
+
+export const getNewsDetail = asyncAction(
+    'nft/GET_NEWS_DETAIL',
+    'nft/GET_NEWS_DETAIL_SUCCESS',
+    'nft/GET_NEWS_DETAIL_FAIL'
+)();
+
 
 
 export const clearNfts = action('nft/CLEAR_ALL_NFTS')();

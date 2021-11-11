@@ -4453,4 +4453,12 @@ img.img-rounded {
   object-position: center;
 }
 
+.link-color{
+  color: #8364e2;
+  font-size: 1rem;
+}
 
+.link-color:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}

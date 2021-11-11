@@ -1,22 +1,22 @@
 import React, { memo, useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import * as selectors from "../../store/selectors";
-import { fetchArticlesBreakdown } from "../../store/actions/thunks";
+import { fetchNewsBreakdown } from "../../store/actions/thunks";
 
-const Articles = () => {
+const News = () => {
   const dispatch = useDispatch();
-  const articlesState = useSelector(selectors.articlesBreakdownState);
-  const articles = articlesState.data ? articlesState.data : [];
+  const newsState = useSelector(selectors.newsBreakdownState);
+  const news = newsState.data ? newsState.data : [];
 
   useEffect(() => {
-    dispatch(fetchArticlesBreakdown());
+    dispatch(fetchNewsBreakdown());
   }, [dispatch]);
 
   return (
     <div className="row">
       <div className="col-lg-4 col-md-6 mb30 articles-row">
-        {articles &&
-          articles.map((article, index) => (
+        {news &&
+          news.map((article, index) => (
             <div className="bloglist item articles-item" key={index}>
               <div className="post-content">
                 <div className="post-image">
@@ -42,4 +42,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default News;

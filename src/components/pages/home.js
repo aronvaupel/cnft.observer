@@ -10,6 +10,7 @@ import CarouselChartsRedux from "../components/CarouselChartsRedux";
 import Footer from "../components/footer";
 import Articles from "../components/Articles";
 import { createGlobalStyle } from "styled-components";
+import News from "../components/News";
 
 
 const GlobalStyles = createGlobalStyle`
@@ -143,7 +144,7 @@ return(
           <h2>Upcoming Drops</h2>
             <span
             onClick={() => window.open("#", "_self")}
-            className="btn-main inline lead"
+            className=" inline lead link-color"
             id="calendar-span"
           >
             View all
@@ -153,36 +154,48 @@ return(
       <CarouselUpcomingDropsRedux />
     </section>
 
+    <section className="container no-top no-bottom">
+      <div className="row">
+        <div className="spacer-double"></div>
+        <div className="col-lg-12 mb-3 calendar-row">
+          <h2>News</h2>
+          <span
+            onClick={() => window.open("#", "_self")}
+            className=" inline lead link-color"
+            id="calendar-span"
+          >
+            View all
+          </span>
+        </div>
+        <News />
+      </div>
+    </section>
+
      <section className='container no-top no-bottom'>
         <div className='row'>
           <div className="spacer-double"></div>
-          <div className='col-lg-12 mb-2'>
+          <div className='col-lg-12 mb-2 calendar-row'>
               <h2>Recently Sold</h2>
+              <span
+            onClick={() => window.open("#", "_self")}
+            className=" inline lead link-color"
+            id="calendar-span"
+          >
+            View all
+          </span>
           </div>
         </div> 
         <CarouselRecentlySoldRedux/>
       </section>
-    
-     <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-2">
-          <h2>Hot Collections</h2>
-        </div>
-        <div className="col-lg-12">
-          <CarouselCollectionRedux />
-        </div>
-      </div>
-    </section>
 
-<section className="container no-top no-bottom">
+      <section className="container no-top no-bottom">
       <div className="row">
         <div className="spacer-double"></div>
-         <div className="col-lg-12 mb-2 topProjects-row">
+         <div className="col-lg-12 mb-2 topProjects-row calendar-row">
           <h2>Top Projects</h2>
-            <span
+           <span
             onClick={() => window.open("#", "_self")}
-            className="btn-main inline lead"
+            className=" inline lead link-color"
             id="calendar-span"
           >
             View all
@@ -193,14 +206,42 @@ return(
         </div>
       </div>
     </section>
+    
+     <section className="container no-top no-bottom">
+      <div className="row">
+        <div className="spacer-double"></div>
+        <div className="col-lg-12 mb-2 calendar-row">
+          <h2>Hot Collections</h2>
+          <span
+            onClick={() => window.open("#", "_self")}
+            className=" inline lead link-color"
+            id="calendar-span"
+          >
+            View all
+          </span>
+        </div>
+        <div className="col-lg-12">
+          <CarouselCollectionRedux />
+        </div>
+      </div>
+    </section>
+
+
 
       
 
     <section className="container no-top no-bottom">
       <div className="row">
         <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-2">
+        <div className="col-lg-12 mb-2 calendar-row">
           <h2>Statistics</h2>
+          <span
+            onClick={() => window.open("#", "_self")}
+            className=" inline lead link-color"
+            id="calendar-span"
+          >
+            View all
+          </span>
         </div>
       </div>
       <CarouselChartsRedux />
@@ -209,12 +250,21 @@ return(
     <section className="container no-top no-bottom">
       <div className="row">
         <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-3">
+        <div className="col-lg-12 mb-3 calendar-row">
           <h2>Basics, Tutorials, Tips and Tricks</h2>
+          <span
+            onClick={() => window.open("#", "_self")}
+            className=" inline lead link-color"
+            id="calendar-span"
+          >
+            View all
+          </span>
         </div>
         <Articles />
       </div>
     </section>
+
+    
     <Footer />
   </div>)
 };

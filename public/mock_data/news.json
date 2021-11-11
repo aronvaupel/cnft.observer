@@ -1,28 +1,24 @@
 [
-
     {
-"title": "About Cardano and CNFTs",
+"title": "News",
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
-"subheader": "Basics",
-"imgSrc": "./img/ownPictures/virtual.jpg"
+"subheader": "Latest",
+"imgSrc": "./img/ownPictures/latest.jpg"
 },
-
- {
-"title": "Set-up your Wallet",
+        {
+"title": "Popular",
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
-"subheader": "Tutorial",
-"imgSrc": "./img/ownPictures/rocketStart.jpg"
-
+"subheader": "Popular",
+"imgSrc": "./img/ownPictures/popular.jpg"
 },
-
- {
-"title": "Safety Advice",
+    {
+"title": "News",
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
-"subheader": "Tips & Tricks",
-"imgSrc": "./img/ownPictures/lightning.jpg"
+"subheader": "Recommended",
+"imgSrc": "./img/ownPictures/recommended.jpg"
 }
 
 ]
