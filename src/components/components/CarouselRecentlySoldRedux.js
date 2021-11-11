@@ -36,17 +36,17 @@ const CarouselRecentlySoldRedux = () => {
           {nfts && nfts.map( (nft, index) => (
             <div className='itm' index={index + 1} key={index}>
               <div className="d-item">
-                <div className="nft__item addShadow">
-                    <div className="author_list_pp">
+                <div className="nft__item  addShadow">
+                    <div className="author_list_pp ">
                         <span onClick={()=> window.open("/home1", "_self")}>                                    
                             <img className="lazy" src={nft.authorImg} alt={nft.title}/>
                             <i className="fa fa-check"></i>
                         </span>
                     </div>
-                    <div className="nft__item_wrap  addShadow">
+                    <div className="nft__item_wrap  addShadow addBorder">
                       <Outer>
                         
-                            <img src={nft.previewImg} className="lazy nft__item_preview  " id="fix-picture-size" alt={nft.title}/>
+                            <img src={nft.previewImg} className="lazy nft__item_preview" id="fix-picture-size" alt={nft.title}/>
                        
                       </Outer>
                     </div>

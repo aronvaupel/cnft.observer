@@ -49,6 +49,7 @@ const CarouselUpcomingDropsRedux = () => {
               <span
                 className="box-url upcomingDropsBox addShadow"
                 onClick={() => setModalId(`modal${index}`)}
+                id="upcomingDrops-grow"
               >
                
                 <img src={project.previewImg} alt="preview" className="mb20 " />

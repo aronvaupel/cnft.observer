@@ -154,22 +154,7 @@ return(
       <CarouselUpcomingDropsRedux />
     </section>
 
-    <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-3 calendar-row">
-          <h2 className="headline-responsiveness">News</h2>
-          <span
-            onClick={() => window.open("#", "_self")}
-            className=" inline lead link-color"
-            id="calendar-span"
-          >
-            View all
-          </span>
-        </div>
-        <News />
-      </div>
-    </section>
+    
 
      <section className='container no-top no-bottom'>
         <div className='row'>
@@ -227,7 +212,22 @@ return(
     </section>
 
 
-
+<section className="container no-top no-bottom">
+      <div className="row">
+        <div className="spacer-double"></div>
+        <div className="col-lg-12 mb-3 calendar-row">
+          <h2 className="headline-responsiveness">News</h2>
+          <span
+            onClick={() => window.open("#", "_self")}
+            className=" inline lead link-color"
+            id="calendar-span"
+          >
+            View all
+          </span>
+        </div>
+        <News />
+      </div>
+    </section>
       
 
     <section className="container no-top no-bottom">

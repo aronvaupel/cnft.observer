@@ -44,8 +44,9 @@ const CarouselChartsRedux = () => {
                   <div className="nft__item_wrap wrapperChart-inner">
                     <div className="textWrapper">
                       <h4>{chart.options.title.name}</h4>
-                      <Outer>
+                      <Outer id="chart-grow">
                         <Chart
+                        
                           type={chart.options.chart.type}
                           options={chart.options}
                           series={chart.series}
