@@ -228,7 +228,7 @@ export const carouselChart = {
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true
       }

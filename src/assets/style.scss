@@ -4124,6 +4124,11 @@ img.img-rounded {
     display: block;
     margin: 20px 0;
   }
+
+  .author_list {
+    column-count: 3 !important;
+    column-gap: 20px;
+}
 }
 @media only screen and (max-width: 768px) {
   .breadcumb .mainbreadcumb .list {
@@ -4143,7 +4148,7 @@ img.img-rounded {
     padding-right: 30px;
   }
   .author_list {
-    column-count: 1;
+    column-count: 2 !important;
     column-gap: 20px;
   }
   #form_quick_search {
@@ -4576,5 +4581,17 @@ transform: scale(1.0);
   .post-image img {
   height: 100px;
 }
+.author_list {
+    column-count: 1 !important;
 }
-
+}
+@media only screen and (max-width: 1024px) {
+  #calendar-span {
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .post-image img {
+  height: 100px;
+}
+}
