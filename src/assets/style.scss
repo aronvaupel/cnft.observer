@@ -4203,6 +4203,7 @@ img.img-rounded {
 }
 
 .calendar-row {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -4215,12 +4216,7 @@ img.img-rounded {
   height: 75%;
 }
 
-@media only screen and (max-width: 414px) {
-  #calendar-span {
-    align-items: flex-end;
-    width: 50%;
-  }
-}
+
 
 .upcomingDrops {
   display: flex;
@@ -4480,5 +4476,34 @@ img.img-rounded {
  
 .slick-dots{
   visibility: hidden;
+}
+.headline-responsiveness{
+  font-size: 1rem;
+  margin-bottom: 0;
+  height:fit-content;
+  text-transform: uppercase;
+}
+#calendar-span{
+  align-items: center;
+}
+.post-text h4 span{
+  font-size: .9rem;
+}
+.link-color{
+  color: #8364e2;
+  font-size: .7rem;
+}
+
+
+}
+
+@media only screen and (max-width: 414px) {
+  #calendar-span {
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+  }
+  .post-image img {
+  height: 100px;
 }
 }

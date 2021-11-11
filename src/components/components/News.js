@@ -24,9 +24,9 @@ const News = () => {
                 </div>
                 <div className="post-text">
                   <span className="p-date">{article.subheader}</span>
-                  <h4>
-                    <span>
-                      {article.title} <span></span>
+                  <h4 >
+                    <span >
+                      {article.title}
                     </span>
                   </h4>
                   <p>{article.teaser}</p>

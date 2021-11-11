@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import TopProjects from './topProjects';
 import * as selectors from '../../store/selectors';
 import { fetchTopProjectsList } from "../../store/actions/thunks";
+import { useMediaQuery } from "react-responsive";
 
 const TopProjectsList = () => {
     
@@ -14,14 +15,20 @@ const TopProjectsList = () => {
         dispatch(fetchTopProjectsList());
     }, [dispatch]);
 
+const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
     return (
         <div>
             <ol className="author_list">
-            { projects && projects.map((project, index) => (
+            { projects && !isMobile ? projects.map((project, index) => (
                 <li key={index}>
                     <TopProjects project={project} />
                 </li>
-            ))}
+            )) : projects.map((project, index) => (
+                <li key={index}>
+                    <TopProjects project={project} />
+                </li>
+            )).slice(0,5)}
             </ol>
         </div>
     );

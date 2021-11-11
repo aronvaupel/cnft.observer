@@ -158,7 +158,7 @@ return(
       <div className="row">
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-3 calendar-row">
-          <h2>News</h2>
+          <h2 className="headline-responsiveness">News</h2>
           <span
             onClick={() => window.open("#", "_self")}
             className=" inline lead link-color"
@@ -175,7 +175,7 @@ return(
         <div className='row'>
           <div className="spacer-double"></div>
           <div className='col-lg-12 mb-2 calendar-row'>
-              <h2>Recently Sold</h2>
+              <h2 className="headline-responsiveness">Recently Sold</h2>
               <span
             onClick={() => window.open("#", "_self")}
             className=" inline lead link-color"
@@ -192,7 +192,7 @@ return(
       <div className="row">
         <div className="spacer-double"></div>
          <div className="col-lg-12 mb-2 topProjects-row calendar-row">
-          <h2>Top Projects</h2>
+          <h2 className="headline-responsiveness">Top Projects</h2>
            <span
             onClick={() => window.open("#", "_self")}
             className=" inline lead link-color"
@@ -211,7 +211,7 @@ return(
       <div className="row">
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-2 calendar-row">
-          <h2>Hot Collections</h2>
+          <h2 className="headline-responsiveness">Hot Collections</h2>
           <span
             onClick={() => window.open("#", "_self")}
             className=" inline lead link-color"
@@ -234,7 +234,7 @@ return(
       <div className="row">
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-2 calendar-row">
-          <h2>Statistics</h2>
+          <h2 className="headline-responsiveness">Statistics</h2>
           <span
             onClick={() => window.open("#", "_self")}
             className=" inline lead link-color"
@@ -251,7 +251,7 @@ return(
       <div className="row">
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-3 calendar-row">
-          <h2>Basics, Tutorials, Tips and Tricks</h2>
+          <h2 className="headline-responsiveness">Basics, Tutorials, Tips and Tricks</h2>
           <span
             onClick={() => window.open("#", "_self")}
             className=" inline lead link-color"
