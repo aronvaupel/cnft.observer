@@ -251,7 +251,7 @@ return(
       <div className="row">
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-3 calendar-row">
-          <h2 className="headline-responsiveness">Basics, Tutorials, Tips and Tricks</h2>
+          <h2 className="headline-responsiveness">Basics</h2>
           <span
             onClick={() => window.open("#", "_self")}
             className=" inline lead link-color"

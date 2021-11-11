@@ -23,7 +23,7 @@ const News = () => {
                   <img alt="" src={article.imgSrc} className="lazy articlePicture" />
                 </div>
                 <div className="post-text">
-                  <span className="p-date">{article.subheader}</span>
+                  <span className="p-date articlesSubheader">{article.subheader}</span>
                   <h4 >
                     <span >
                       {article.title}
