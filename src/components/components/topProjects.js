@@ -4,9 +4,9 @@ import React, { memo } from 'react';
 const TopProject = ({ project }) => {
     return (
         <>
-            <div className="author_list_pp">
-              <span onClick={()=> window.open("", "_self")}>
-                  <img className="lazy" src={project.avatar} alt=""/>
+            <div className="author_list_pp" >
+              <span onClick={()=> window.open("", "_self")} >
+                  <img className="lazy" src={project.avatar} id="topProject-grow" alt="Artist's Avatar"/>
                   <i className="fa fa-check"></i>
               </span>
             </div>                                    
