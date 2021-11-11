@@ -81,17 +81,17 @@ const CarouselChartsRedux = () => {
                         >
                           Close
                         </div>
-                        <div className="wrapperModal-title">{chart.options.title.name}</div>
+                        <div className="wrapperModal-title">{chart.modal.options.title.name}</div>
                       </div>
                     </div>
                       <Outer>
                         <Chart
-                          type={chart.options.chart.type}
-                          options={chart.options}
-                          series={chart.series}
+                          type={chart.modal.options.chart.type}
+                          options={chart.modal.options}
+                          series={chart.modal.series}
                           height="auto"
                           width="600px"
-                          chartOptions={chart.chartOptions}
+                          chartOptions={chart.modal.chartOptions}
                         />
                       </Outer>
                   </div>

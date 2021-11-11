@@ -88,6 +88,7 @@ const CarouselUpcomingDropsRedux = () => {
                     <div className="wrapperModal-info">
                       <p>Drop Date: <span className='wrapperModal-info--p'> {project.dropdate} </span></p>
                       <p>Drop Time: <span className='wrapperModal-info--p'>{project.droptime} </span></p>
+                      <p>Mint price: <span className='wrapperModal-info--p'>{project.mintprice} </span></p>
                       <p>Total NFTs: <span className='wrapperModal-info--p'>{project.nfts} </span></p>
                     </div>
 
