@@ -4525,6 +4525,7 @@ transform: scale(1.0);
 .link-color{
   color: #8364e2;
   font-size: 1rem;
+  z-index: 9999;
 }
 
 .link-color:hover{
@@ -4594,4 +4595,7 @@ transform: scale(1.0);
   .post-image img {
   height: 100px;
 }
+}
+.tsparticles-canvas-el{
+  z-index: 0;
 }

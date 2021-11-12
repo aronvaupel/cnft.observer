@@ -144,7 +144,7 @@ return(
           <h2 className="headline-responsiveness">Upcoming Drops</h2>
             <span
             onClick={() => window.open("#", "_self")}
-            className=" inline lead link-color"
+            className="inline lead link-color"
             id="calendar-span"
           >
             View all
