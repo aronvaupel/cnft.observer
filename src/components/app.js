@@ -32,7 +32,7 @@ import Accordion from './pages/accordion';
 import Alerts from './pages/alerts';
 import Progressbar from './pages/progressbar';
 import Tabs from './pages/tabs';
-
+import AllUpcomingDrops from './pages/AllUpcomingDrops'
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -64,13 +64,18 @@ const app= () => (
   <div className="wraper">
   <GlobalStyles />
     <Header/>
-      <PosedRouter>
-      <ScrollTop path="/">
-        <Home exact path="/">
+      <PosedRouter> 
+       
+      <ScrollTop path="/"> 
+     
+         <Home exact path="/">
           <Redirect to="/home" />
         </Home>
         <Home1 path="/home1" />
         <Home2 path="/home2" />
+
+       <AllUpcomingDrops path="/AllUpcomingDrops" />
+      
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
         <Helpcenter path="/helpcenter" />

@@ -11,6 +11,8 @@ import Footer from "../components/footer";
 import Articles from "../components/Articles";
 import { createGlobalStyle } from "styled-components";
 import News from "../components/News";
+import {Link} from "@reach/router"
+
 
 
 const GlobalStyles = createGlobalStyle`
@@ -137,22 +139,7 @@ return(
 
    
     
-    <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-2 calendar-row">
-          <h2 className="headline-responsiveness">Upcoming Drops</h2>
-            <span
-            onClick={() => window.open("#", "_self")}
-            className="inline lead link-color"
-            id="calendar-span"
-          >
-            View all
-          </span>
-        </div>
-      </div>
-      <CarouselUpcomingDropsRedux />
-    </section>
+    
 
     
 
@@ -161,17 +148,37 @@ return(
           <div className="spacer-double"></div>
           <div className='col-lg-12 mb-2 calendar-row'>
               <h2 className="headline-responsiveness">Recently Sold</h2>
+              <Link to="/allUpcomingDrops">
               <span
-            onClick={() => window.open("#", "_self")}
+            
             className=" inline lead link-color"
             id="calendar-span"
           >
             View all
           </span>
+          </Link>
           </div>
         </div> 
         <CarouselRecentlySoldRedux/>
       </section>
+
+      <section className="container no-top no-bottom">
+      <div className="row">
+        <div className="spacer-double"></div>
+        <div className="col-lg-12 mb-2 calendar-row">
+          <h2 className="headline-responsiveness">Upcoming Drops</h2>
+          <Link to="/AllUpcomingDrops">
+            <span
+            className="inline lead link-color"
+            id="calendar-span"
+          >
+            View all
+          </span>
+          </Link>
+        </div>
+      </div>
+      <CarouselUpcomingDropsRedux />
+    </section>
 
       <section className="container no-top no-bottom">
       <div className="row">
