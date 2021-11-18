@@ -2,7 +2,7 @@
     {
         "name": "art",
         "deadline":"2022-03-25T12:00:00Z",
-        "previewImg": "./img/wallet/1.png",
+        "previewImg":  "./img/items/static-1.jpg",
         "dropdate":"December, 01, 2021",
         "droptime": "19:00",
         "mintprice": "1 ADA",
@@ -12,7 +12,9 @@
         "website": "aaa",
         "projectURL": "ddd",
         "description": "Round about twenty words about the project and stuff you want to know. Useful information.",
-        "likes": 50
+        "likes": 50,
+        "authorImg": "./img/author/author-1.jpg"
+       
     },
      {
         "name": "arto",

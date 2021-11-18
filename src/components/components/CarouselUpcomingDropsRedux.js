@@ -42,7 +42,7 @@ const CarouselUpcomingDropsRedux = () => {
         {upcomingDrops &&
           upcomingDrops.map((project, index) => (
             <div
-              className="col-lg-2 col-sm-4 col-6 mb30 "
+              className="col-lg-2 col-sm-4 col-6 mb30"
               index={index + 1}
               key={index}
             >
@@ -52,7 +52,7 @@ const CarouselUpcomingDropsRedux = () => {
                 id="upcomingDrops-grow"
               >
                
-                <img src={project.previewImg} alt="preview" className="mb20 " />
+                <img src={project.previewImg} alt="preview" className="mb20 " id="fix-picture-size" />
                
                 <h4>{project.name}</h4>{" "}
                 {project.deadline && (
@@ -88,7 +88,7 @@ const CarouselUpcomingDropsRedux = () => {
 
                     <div className="wrapperModal-info">
                       <p>Drop Date: <span className='wrapperModal-info--p'> {project.dropdate} </span></p>
-                      <p>Drop Time: <span className='wrapperModal-info--p'>{project.droptime} </span></p>
+                      <p>Drop Time (UTC): <span className='wrapperModal-info--p'>{project.droptime} </span></p>
                       <p>Mint price: <span className='wrapperModal-info--p'>{project.mintprice} </span></p>
                       <p>Total NFTs: <span className='wrapperModal-info--p'>{project.nfts} </span></p>
                     </div>

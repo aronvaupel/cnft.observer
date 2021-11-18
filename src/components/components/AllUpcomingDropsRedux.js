@@ -5,13 +5,14 @@ import * as actions from '../../store/actions/thunks';
 import { clearNfts, clearFilter } from '../../store/actions';
 import AllUpcomingDropsCard from './AllUpcomingDropsCard';
 import { shuffleArray } from '../../store/utils';
+import { fetchUpcomingDropsBreakdown } from '../../store/actions/thunks';
 
 //react functional component
 const AllUpcomingDropsRedux = ({ showLoadMore = true, shuffle = false }) => {
 
     const dispatch = useDispatch();
-    const nftItems = useSelector(selectors.nftItems);
-    const nfts = nftItems ? shuffle ? shuffleArray(nftItems) : nftItems : [];
+     const nftItems = useSelector(selectors.upcomingDropsBreakdownState);
+    const nfts = nftItems.data ? nftItems.data : [];
     const [height, setHeight] = useState(0);
 
     const onImgLoad = ({target:img}) => {
@@ -22,16 +23,10 @@ const AllUpcomingDropsRedux = ({ showLoadMore = true, shuffle = false }) => {
     }
     
     useEffect(() => {
-        dispatch(actions.fetchUpcomingDropsBreakdown());
+        dispatch(fetchUpcomingDropsBreakdown());
     }, [dispatch]);
 
-    //will run when component unmounted
-    useEffect(() => {
-        return () => {
-            dispatch(clearFilter());
-            dispatch(clearNfts());
-        }
-    },[dispatch]);
+    
 
     const loadMore = () => {
         dispatch(actions.fetchUpcomingDropsBreakdown());
@@ -40,7 +35,7 @@ const AllUpcomingDropsRedux = ({ showLoadMore = true, shuffle = false }) => {
     return (
         <div className='row'>
             {nfts && nfts.map( (nft, index) => (
-                <AllUpcomingDropsCard nft={nft} key={index} onImgLoad={onImgLoad} height={height} />
+                <AllUpcomingDropsCard nft={nft} key={index} onImgLoad={onImgLoad} clockTop={true} height={height} />
             ))}
             { showLoadMore && nfts.length <= 20 &&
                 <div className='col-lg-12'>

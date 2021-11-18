@@ -15,32 +15,31 @@ const Outer = styled.div`
 const AllUpcomingDropsCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-4', clockTop = true, height, onImgLoad }) => {
 
     return (
-        <div className={className}>
-            <div className="nft__item m-0">
+        <div className={className} >
+            <div className="nft__item m-0" id="upcomingDrops-grow">
             
-                { nft.deadline && clockTop &&
-                    <div className="de_countdown">
-                        <Clock deadline={nft.deadline} />
-                    </div>
-                }
-                <div className="author_list_pp">
-                    <span onClick={()=> window.open(nft.authorLink, "_self")}>                                    
-                        <img className="lazy" src={nft.authorImg} alt=""/>
-                        <i className="fa fa-check"></i>
-                    </span>
+                <div className="wrapperModal-info--p text-center">
+                    <h4>{nft.name}</h4>
                 </div>
+                
                 <div className="nft__item_wrap" style={{height: `${height}px`}}>
-                <Outer>
+                <Outer >
                     <span>
                         <img onLoad={onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt=""/>
                     </span>
                 </Outer>
                 </div>
-               
-                <div className="nft__item_info">
-                    <div className="wrapperModal-info">
-                      <p>Drop Date: <span className='wrapperModal-info--p'> {nft.dropdate} </span></p>
-                      <p>Drop Time: <span className='wrapperModal-info--p'>{nft.droptime} </span></p>
+              
+                 <div className="de_countdown clock-position">
+                        <Clock deadline={nft.deadline} />
+                    </div>
+                <div className="nft__item_info"> 
+                 
+                  
+                
+                    <div className="wrapperModal-info date-width text-size-md">
+                      <p>Drop Date: <span className='wrapperModal-info--p '> {nft.dropdate} </span></p>
+                      <p>Drop Time (UTC): <span className='wrapperModal-info--p'>{nft.droptime} </span></p>
                       <p>Mint price: <span className='wrapperModal-info--p'>{nft.mintprice} </span></p>
                       <p>Total NFTs: <span className='wrapperModal-info--p'>{nft.nfts} </span></p>
                     </div>

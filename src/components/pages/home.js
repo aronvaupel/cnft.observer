@@ -148,11 +148,16 @@ return(
           <div className="spacer-double"></div>
           <div className='col-lg-12 mb-2 calendar-row'>
               <h2 className="headline-responsiveness">Recently Sold</h2>
-              <Link to="/allUpcomingDrops">
+              <Link to="/allUpcomingDrops" style={{
+           textDecoration: 'none'
+          }}>
               <span
             
             className=" inline lead link-color"
             id="calendar-span"
+            style={{
+           textDecoration: 'none'
+          }}
           >
             View all
           </span>
@@ -167,10 +172,12 @@ return(
         <div className="spacer-double"></div>
         <div className="col-lg-12 mb-2 calendar-row">
           <h2 className="headline-responsiveness">Upcoming Drops</h2>
-          <Link to="/AllUpcomingDrops">
+          <Link to="/upcoming-cnft-drops" id="calendar-span" style={{
+           textDecoration: 'none'
+          }}>
             <span
             className="inline lead link-color"
-            id="calendar-span"
+            
           >
             View all
           </span>
