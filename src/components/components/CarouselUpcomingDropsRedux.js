@@ -11,6 +11,7 @@ import * as selectors from "../../store/selectors";
 import { fetchUpcomingDropsBreakdown } from "../../store/actions/thunks";
 import { createGlobalStyle } from "styled-components";
 import Discord from "../../assets/svg/ic_outline-discord";
+import {Link} from "@reach/router"
 
 const GlobalStyles = createGlobalStyle`
 .btn-main{
@@ -133,7 +134,11 @@ const CarouselUpcomingDropsRedux = () => {
  : null}
 
                     </div>
-                    <div className="wrapperModal-detailLink btn-main">More</div>
+                    <Link to={`/cnft-details/:${project.name}`}  style={{
+           textDecoration: 'none'
+          }}>
+                    <div className="wrapperModal-detailLink btn-main" >More</div>
+                    </Link>
                   </div>
                 </Modal.Footer>
               </Modal>

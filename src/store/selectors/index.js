@@ -11,6 +11,8 @@ export const authorRankingsState = (state) => state.authors.authorRanking;
 export const topProjectsState = (state) => state.topProjects.topProjectsList;
 export const topProjectsRankingsState = (state) => state.topProjects.topProjectsRanking;
 export const upcomingDropsBreakdownState = (state) => state.upcomingDrops.upcomingDropsBreakdown;
+export const upcomingDropsShowcaseState = (state) => state.upcomingDrops.upcomingDropsShowcase;
+export const upcomingDropsDetailState = (state) => state.upcomingDrops.upcomingDropsDetail;
 export const chartsBreakdownState = (state) => state.charts.chartsBreakdown;
 export const chartsShowcaseState = (state) => state.charts.chartsShowcase;
 export const chartsDetailState = (state) => state.charts.chartDetail;

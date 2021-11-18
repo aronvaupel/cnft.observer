@@ -13,7 +13,8 @@
         "projectURL": "ddd",
         "description": "Round about twenty words about the project and stuff you want to know. Useful information.",
         "likes": 50,
-        "authorImg": "./img/author/author-1.jpg"
+        "authorImg": "./img/author/author-1.jpg",
+        "itemDetailUrl":"art"
        
     },
      {

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Particle from "../components/Particle";
 import SliderMainParticle from "../components/SliderMainParticle";
 import FeatureBox from "../components/FeatureBox";
@@ -11,9 +11,7 @@ import Footer from "../components/footer";
 import Articles from "../components/Articles";
 import { createGlobalStyle } from "styled-components";
 import News from "../components/News";
-import {Link} from "@reach/router"
-
-
+import { Link } from "@reach/router";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader .logo .d-block{
@@ -123,163 +121,153 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const homeone = () => {
-
-
-
-return(
-  <div>
-    <GlobalStyles />
-    <section
-      className="jumbotron no-bg"
-      style={{ backgroundImage: `url(${"./img/background/8.jpg"})` }}
-    >
-      <Particle />
-      <SliderMainParticle />
-    </section>
-
-   
-    
-    
-
-    
-
-     <section className='container no-top no-bottom'>
-        <div className='row'>
-          <div className="spacer-double"></div>
-          <div className='col-lg-12 mb-2 calendar-row'>
-              <h2 className="headline-responsiveness">Recently Sold</h2>
-              <Link to="/allUpcomingDrops" style={{
-           textDecoration: 'none'
-          }}>
-              <span
-            
-            className=" inline lead link-color"
-            id="calendar-span"
-            style={{
-           textDecoration: 'none'
-          }}
-          >
-            View all
-          </span>
-          </Link>
-          </div>
-        </div> 
-        <CarouselRecentlySoldRedux/>
+  return (
+    <div>
+      <GlobalStyles />
+      <section
+        className="jumbotron no-bg"
+        style={{ backgroundImage: `url(${"./img/background/8.jpg"})` }}
+      >
+        <Particle />
+        <SliderMainParticle />
       </section>
 
       <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-2 calendar-row">
-          <h2 className="headline-responsiveness">Upcoming Drops</h2>
-          <Link to="/upcoming-cnft-drops" id="calendar-span" style={{
-           textDecoration: 'none'
-          }}>
-            <span
-            className="inline lead link-color"
-            
-          >
-            View all
-          </span>
-          </Link>
+        <div className="row">
+          <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-2 calendar-row">
+            <h2 className="headline-responsiveness">Recently Sold</h2>
+            <Link
+              to="/allUpcomingDrops"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <span
+                className=" inline lead link-color"
+                id="calendar-span"
+                style={{
+                  textDecoration: "none",
+                }}
+              >
+                View all
+              </span>
+            </Link>
+          </div>
         </div>
-      </div>
-      <CarouselUpcomingDropsRedux />
-    </section>
+        <CarouselRecentlySoldRedux />
+      </section>
 
       <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-         <div className="col-lg-12 mb-2 topProjects-row calendar-row">
-          <h2 className="headline-responsiveness">Top Projects</h2>
-           <span
-            onClick={() => window.open("#", "_self")}
-            className=" inline lead link-color"
-            id="calendar-span"
-          >
-            View all
-          </span>
+        <div className="row">
+          <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-2 calendar-row">
+            <h2 className="headline-responsiveness">Upcoming Drops</h2>
+            <Link
+              to="/upcoming-cnft-drops"
+              id="calendar-span"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <span className="inline lead link-color">View all</span>
+            </Link>
+          </div>
         </div>
-        <div className="col-lg-12 topProjects-main" >
-          <TopProjectsListRedux />
-        </div>
-      </div>
-    </section>
-    
-     <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-2 calendar-row">
-          <h2 className="headline-responsiveness">Hot Collections</h2>
-          <span
-            onClick={() => window.open("#", "_self")}
-            className=" inline lead link-color"
-            id="calendar-span"
-          >
-            View all
-          </span>
-        </div>
-        <div className="col-lg-12">
-          <CarouselCollectionRedux />
-        </div>
-      </div>
-    </section>
+        <CarouselUpcomingDropsRedux />
+      </section>
 
-
-<section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-3 calendar-row">
-          <h2 className="headline-responsiveness">News</h2>
-          <span
-            onClick={() => window.open("#", "_self")}
-            className=" inline lead link-color"
-            id="calendar-span"
-          >
-            View all
-          </span>
+      <section className="container no-top no-bottom">
+        <div className="row">
+          <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-2 topProjects-row calendar-row">
+            <h2 className="headline-responsiveness">Top Projects</h2>
+            <span
+              onClick={() => window.open("#", "_self")}
+              className=" inline lead link-color"
+              id="calendar-span"
+            >
+              View all
+            </span>
+          </div>
+          <div className="col-lg-12 topProjects-main">
+            <TopProjectsListRedux />
+          </div>
         </div>
-        <News />
-      </div>
-    </section>
-      
+      </section>
 
-    <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-2 calendar-row">
-          <h2 className="headline-responsiveness">Statistics</h2>
-          <span
-            onClick={() => window.open("#", "_self")}
-            className=" inline lead link-color"
-            id="calendar-span"
-          >
-            View all
-          </span>
+      <section className="container no-top no-bottom">
+        <div className="row">
+          <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-2 calendar-row">
+            <h2 className="headline-responsiveness">Hot Collections</h2>
+            <span
+              onClick={() => window.open("#", "_self")}
+              className=" inline lead link-color"
+              id="calendar-span"
+            >
+              View all
+            </span>
+          </div>
+          <div className="col-lg-12">
+            <CarouselCollectionRedux />
+          </div>
         </div>
-      </div>
-      <CarouselChartsRedux />
-    </section>
+      </section>
 
-    <section className="container no-top no-bottom">
-      <div className="row">
-        <div className="spacer-double"></div>
-        <div className="col-lg-12 mb-3 calendar-row">
-          <h2 className="headline-responsiveness">Basics</h2>
-          <span
-            onClick={() => window.open("#", "_self")}
-            className=" inline lead link-color"
-            id="calendar-span"
-          >
-            View all
-          </span>
+      <section className="container no-top no-bottom">
+        <div className="row">
+          <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-3 calendar-row">
+            <h2 className="headline-responsiveness">News</h2>
+            <span
+              onClick={() => window.open("#", "_self")}
+              className=" inline lead link-color"
+              id="calendar-span"
+            >
+              View all
+            </span>
+          </div>
+          <News />
         </div>
-        <Articles />
-      </div>
-    </section>
+      </section>
 
-    
-    <Footer />
-  </div>)
+      <section className="container no-top no-bottom">
+        <div className="row">
+          <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-2 calendar-row">
+            <h2 className="headline-responsiveness">Statistics</h2>
+            <span
+              onClick={() => window.open("#", "_self")}
+              className=" inline lead link-color"
+              id="calendar-span"
+            >
+              View all
+            </span>
+          </div>
+        </div>
+        <CarouselChartsRedux />
+      </section>
+
+      <section className="container no-top no-bottom">
+        <div className="row">
+          <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-3 calendar-row">
+            <h2 className="headline-responsiveness">Basics</h2>
+            <span
+              onClick={() => window.open("#", "_self")}
+              className=" inline lead link-color"
+              id="calendar-span"
+            >
+              View all
+            </span>
+          </div>
+          <Articles />
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
 };
 export default homeone;

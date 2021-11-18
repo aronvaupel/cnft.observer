@@ -23,3 +23,18 @@ export const fetchUpcomingDropsBreakdown = () => async (dispatch, getState) => {
 
 
 
+export const fetchUpcomingDropsDetail = () => async (dispatch) => {
+
+  dispatch(actions.getUpcomingDropsDetail.request(Canceler.cancel));
+
+  try {
+    const { data } = await Axios.get('/mock_data/upcoming_drops.json', {
+      cancelToken: Canceler.token,
+      params: {}
+    });
+
+    dispatch(actions.getUpcomingDropsDetail.success(data));
+  } catch (err) {
+    dispatch(actions.getUpcomingDropsDetail.failure(err));
+  }
+};

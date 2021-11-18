@@ -4445,7 +4445,7 @@ img.img-rounded {
 #upcomingDrops-grow:hover {
   animation-name: grow;
   animation-duration: 15s;
-  border: #a2a2a2 1px solid
+  border: #a2a2a2 1px solid;
 }
 #upcomingDrops-grow {
   animation-name: shrink;
@@ -4498,7 +4498,7 @@ img.img-rounded {
   }
 }
 
-.addMargin{
+.addMargin {
   margin: 100px 0 100px 0;
 }
 
@@ -4529,7 +4529,6 @@ img.img-rounded {
   color: #8364e2;
   font-size: 1rem;
   z-index: 9999;
-  
 }
 
 .link-color:hover {
@@ -4612,54 +4611,77 @@ img.img-rounded {
 .clock-position {
   display: flex;
   justify-content: center;
-    font-size: 0.8rem;
-    background: #212428;
-    padding: 6px 10px;
-    border-radius: 30px;
-    border: solid 2px #ff343f;
-    z-index: 1;
-    color: #fff;
-    width: 100%;
-    right:0;
-    position:static;
+  font-size: 0.8rem;
+  background: #212428;
+  padding: 6px 10px;
+  border-radius: 30px;
+  border: solid 2px #ff343f;
+  z-index: 1;
+  color: #fff;
+  width: 100%;
+  right: 0;
+  position: static;
 }
 
-#headline-adjust{
+#headline-adjust {
   text-align: center;
 }
 
-.text-size-md{
+.text-size-md {
   font-size: 0.8rem;
   line-height: 10px;
 }
 
-#profile_banner{
+#profile_banner {
   height: 450px;
-  
 }
-.center-elements{
- padding-top: 200px;
-}
-
-.cursor-pointer:hover{
- cursor:pointer;
+.center-elements {
+  padding-top: 200px;
 }
 
-.breadcumb{
-  border-bottom:none;
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.breadcumb {
+  border-bottom: none;
 }
 
 .fader:after {
-  content  : "";
-  position : absolute;
-  z-index  : 1;
-  bottom   : 0;
-  left     : 0;
-  background-image : linear-gradient(to bottom, 
-                    transparent, 
-                    #212529 100%);
-  width    : 100%;
-  height   : 8rem;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, transparent, #212529 100%);
+  width: 100%;
+  height: 8rem;
+}
+
+#clock-fix {
+  position: relative;
+  font-size: 0.8rem;
+  right: 20px;
+  background: #212428;
+  padding: 6px 10px;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: solid 2px #ff343f;
+  z-index: 1;
+  color: #fff;
+}
+
+.inline{
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 

@@ -12,6 +12,7 @@ import Helpcenter from './pages/helpcenter';
 import RankingRedux from './pages/RankingRedux';
 import Colection from './pages/colection';
 // import ItemDetail from './pages/ItemDetail';
+import ItemDetailPageRedux from './pages/ItemDetailPageRedux';
 import ItemDetailRedux from './pages/ItemDetailRedux';
 import Author from './pages/Author';
 import Wallet from './pages/wallet';
@@ -75,7 +76,7 @@ const app= () => (
         <Home2 path="/home2" />
 
        <AllUpcomingDrops path="/upcoming-cnft-drops" />
-      
+      <ItemDetailPageRedux itemName path="cnft-details/:id"/>
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
         <Helpcenter path="/helpcenter" />

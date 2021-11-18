@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import styled from "styled-components";
 import Clock from "./Clock";
 
+
 const Outer = styled.div`
   display: flex;
   justify-content: center;
@@ -16,6 +17,7 @@ const AllUpcomingDropsCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-s
 
     return (
         <div className={className} >
+           
             <div className="nft__item m-0" id="upcomingDrops-grow">
             
                 <div className="wrapperModal-info--p text-center">
