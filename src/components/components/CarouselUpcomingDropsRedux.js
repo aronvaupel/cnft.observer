@@ -51,11 +51,11 @@ const CarouselUpcomingDropsRedux = () => {
                 className="box-url upcomingDropsBox addShadow"
                 onClick={() => setModalId(`modal${index}`)}
                 id="upcomingDrops-grow"
-              >
+              ><h4>{project.name}</h4>
                
                 <img src={project.previewImg} alt="preview" className="mb20 " id="fix-picture-size" />
                
-                <h4>{project.name}</h4>{" "}
+                {" "}
                 {project.deadline && (
                   <div className="de_countdown ">
                     <Clock deadline={project.deadline} />

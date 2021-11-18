@@ -4435,7 +4435,7 @@ img.img-rounded {
   width: 100%;
   border-radius: 8px;
   animation-name: shrink;
-  animation-duration: 1.5s;
+  animation-duration: 0.7s;
 }
 
 #fix-picture-size:hover {
@@ -4450,7 +4450,7 @@ img.img-rounded {
 }
 #upcomingDrops-grow {
   animation-name: shrink;
-  animation-duration: 1.5s;
+  animation-duration: 0.7s;
 }
 
 #chart-grow:hover {
@@ -4460,12 +4460,12 @@ img.img-rounded {
 
 #chart-grow {
   animation-name: shrink;
-  animation-duration: 1.5s;
+  animation-duration: 0.7s;
 }
 
 #topProject-grow {
   animation-name: shrink;
-  animation-duration: 1.5s;
+  animation-duration: 0.7s;
 }
 
 #topProject-grow:hover {
@@ -4477,10 +4477,10 @@ img.img-rounded {
   0% {
     transform: scale(1);
   }
-  10% {
+  3% {
     transform: scale(1.05);
   }
-  90% {
+  97% {
     transform: scale(1.05);
   }
 
