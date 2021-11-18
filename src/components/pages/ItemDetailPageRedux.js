@@ -93,21 +93,7 @@ const ItemDetailPageRedux = () => {
                     <Clock deadline={nft.item_deadline} />
                   </div>
                 )}
-                <div className="item_author">
-                  <div className="author_list_pp">
-                    <span>
-                      <img
-                        className="lazy"
-                        src={nft.author && nft.author.avatar}
-                        alt=""
-                      />
-                      <i className="fa fa-check"></i>
-                    </span>
-                  </div>
-                  <div className="author_list_info">
-                    <span>{nft.author && nft.author.username}</span>
-                  </div>
-                </div>
+                
                 <div className="item_info_like align-center">
                   <i className="fa fa-heart"></i>
                   {nft.item_likes}

@@ -61,7 +61,7 @@ const AllUpcomingDrops = function () {
         id="profile_banner"
         className="jumbotron breadcumb no-bg center-elements fader"
         style={{
-          backgroundImage: `url(${"./img/ownPictures/drop.jpg"})`,
+          backgroundImage: `url(${"/img/ownPictures/drop.jpg"})`,
           backgroundPosition: "left",
           backgroundSize: "cover",
         }}

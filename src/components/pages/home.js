@@ -126,7 +126,7 @@ const homeone = () => {
       <GlobalStyles />
       <section
         className="jumbotron no-bg"
-        style={{ backgroundImage: `url(${"./img/background/8.jpg"})` }}
+        style={{ backgroundImage: `url(${"/img/background/8.jpg"})` }}
       >
         <Particle />
         <SliderMainParticle />
@@ -164,7 +164,7 @@ const homeone = () => {
           <div className="col-lg-12 mb-2 calendar-row">
             <h2 className="headline-responsiveness">Upcoming Drops</h2>
             <Link
-              to="/upcoming-cnft-drops"
+              to="/upcoming-cnft-drops/"
               id="calendar-span"
               style={{
                 textDecoration: "none",
