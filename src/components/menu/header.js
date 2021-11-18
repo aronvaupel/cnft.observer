@@ -98,17 +98,17 @@ const Header= function() {
               <div className='navbar-title navbar-item'>
                 <NavLink to="/">
                 <img
-                    src="./img/logo-3.png"
+                    src="/img/logo-3.png"
                     className="img-fluid d-block"
                     alt="#"
                   />
                   <img
-                    src="./img/logo-3.png"
+                    src="/img/logo-3.png"
                     className="img-fluid d-3"
                     alt="#"
                   />
                   <img
-                    src="./img/logo-light.png"
+                    src="/img/logo-light.png"
                     className="img-fluid d-none"
                     alt="#"
                   />

@@ -1,6 +1,6 @@
 [
     {
-        "avatar": "./img/author/author-1.jpg",
+        "avatar": "/img/author/author-1.jpg",
         "username": "Monica Lucas",
         "sales": 3.2,
         "volume": "15,225.87",
@@ -11,7 +11,7 @@
         "assets": 58.5
     },
     {
-        "avatar": "./img/author/author-2.jpg",
+        "avatar": "/img/author/author-2.jpg",
         "username": "Mamie Barnett",
         "sales": 2.8,
         "volume": "14,304.78",
@@ -22,7 +22,7 @@
         "assets": 28.4
     },
     {
-        "avatar": "./img/author/author-3.jpg",
+        "avatar": "/img/author/author-3.jpg",
         "username": "Nicholas Daniels",
         "sales": 2.5,
         "volume": "13,225.87",

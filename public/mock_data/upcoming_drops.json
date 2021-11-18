@@ -1,8 +1,8 @@
 [
     {
         "name": "art",
-        "deadline":"2022-03-25T12:00:00Z",
-        "previewImg":  "./img/items/static-1.jpg",
+        "deadline":"2021-12-01T12:00:00Z",
+        "previewImg":  "/img/items/static-1.jpg",
         "dropdate":"December, 01, 2021",
         "droptime": "19:00",
         "mintprice": "1 ADA",
@@ -13,44 +13,44 @@
         "projectURL": "ddd",
         "description": "Round about twenty words about the project and stuff you want to know. Useful information.",
         "likes": 50,
-        "authorImg": "./img/author/author-1.jpg",
+        "authorImg": "/img/author/author-1.jpg",
         "itemDetailUrl":"art"
        
     },
      {
         "name": "arto",
         "deadline":"December, 02, 2021",
-        "previewImg": "./img/wallet/2.png"
+        "previewImg": "/img/wallet/2.png"
        
     },
      {
         "name": "arte",
         "deadline":"December, 03, 2021",
-        "previewImg": "./img/wallet/3.png"
+        "previewImg": "/img/wallet/3.png"
        
     },
      {
         "name": "arti",
         "deadline":"December, 04, 2021",
-        "previewImg": "./img/wallet/4.png"
+        "previewImg": "/img/wallet/4.png"
        
     },
      {
         "name": "arta",
         "deadline":"January, 05, 2022",
-        "previewImg": "./img/wallet/5.png"
+        "previewImg": "/img/wallet/5.png"
        
     },
      {
         "name": "artos",
         "deadline":"January, 06, 2022",
-        "previewImg": "./img/wallet/6.png"
+        "previewImg": "/img/wallet/6.png"
        
     },
      {
         "name": "artibibilitiby",
         "deadline":"February, 30, 2022",
-        "previewImg": "./img/wallet/7.png"
+        "previewImg": "/img/wallet/7.png"
        
     }
 ]

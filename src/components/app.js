@@ -75,8 +75,8 @@ const app= () => (
         <Home1 path="/home1" />
         <Home2 path="/home2" />
 
-       <AllUpcomingDrops path="/upcoming-cnft-drops" />
-      <ItemDetailPageRedux itemName path="cnft-details/:id"/>
+        <AllUpcomingDrops path="/upcoming-cnft-drops" />
+        <ItemDetailPageRedux path="/cnft-details/:id"/>
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
         <Helpcenter path="/helpcenter" />

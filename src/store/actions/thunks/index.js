@@ -6,5 +6,5 @@ export * from './upcomingDrops';
 export * from './charts';
 export * from './articles';
 export * from './news';
-
+export * from './nfts_details';
 

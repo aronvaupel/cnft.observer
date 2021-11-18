@@ -4,21 +4,21 @@
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
 "subheader": "Latest",
-"imgSrc": "./img/ownPictures/latest.jpg"
+"imgSrc": "/img/ownPictures/latest.jpg"
 },
         {
 "title": "Popular",
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
 "subheader": "Popular",
-"imgSrc": "./img/ownPictures/popular.jpg"
+"imgSrc": "/img/ownPictures/popular.jpg"
 },
     {
 "title": "News",
 "article": "Lorem",
 "teaser":"Dolore officia sint incididunt non excepteur ea mollit commodut enim reprehenderit cupidatat labore ad laborum consectetur consequat...",
 "subheader": "Recommended",
-"imgSrc": "./img/ownPictures/recommended.jpg"
+"imgSrc": "/img/ownPictures/recommended.jpg"
 }
 
 ]

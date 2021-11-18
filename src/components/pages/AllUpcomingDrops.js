@@ -123,16 +123,9 @@ const AllUpcomingDrops = function () {
             </div>
           </div>
         </div>
-        {openMenu && (
-          <div id="zero1" className="onStep fadeIn">
-            <AllUpcomingDropsRedux shuffle showLoadMore={false} />
-          </div>
-        )}
-        {openMenu1 && (
-          <div id="zero2" className="onStep fadeIn">
-            <AllUpcomingDropsRedux shuffle showLoadMore={false} />
-          </div>
-        )}
+       
+            <AllUpcomingDropsRedux  showLoadMore={false} />
+         
       </section>
 
       <Footer />
