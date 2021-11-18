@@ -11,6 +11,9 @@ const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.white {
     background: #212428;
   }
+  #form_quick_search #btn-submit i {
+  background: #8364e2;
+  }
 `;
 
 const fadeInUp = keyframes`
@@ -62,7 +65,6 @@ const AllUpcomingDrops = function () {
         className="jumbotron breadcumb no-bg center-elements fader"
         style={{
           backgroundImage: `url(${"/img/ownPictures/drop.jpg"})`,
-          backgroundPosition: "left",
           backgroundSize: "cover",
         }}
       >

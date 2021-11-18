@@ -89,7 +89,7 @@ const ItemDetailPageRedux = () => {
             <div className="item_info">
               <div className="inline">
                 {nft.item_deadline && (
-                  <div className="de_countdown" id="clock-fix">
+                  <div className="de_countdown " id="clock-fix">
                     <Clock deadline={nft.item_deadline} />
                   </div>
                 )}

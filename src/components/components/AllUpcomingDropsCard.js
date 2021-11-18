@@ -1,6 +1,8 @@
 import React, { memo } from 'react';
 import styled from "styled-components";
 import Clock from "./Clock";
+import {Link} from "@reach/router"
+
 
 
 const Outer = styled.div`
@@ -17,10 +19,13 @@ const AllUpcomingDropsCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-s
 
     return (
         <div className={className} >
-           
+            <Link to={`/cnft-details/:${nft.name}`}  style={{
+           textDecoration: 'none',
+           color: 'inherit'
+          }}>
             <div className="nft__item m-0" id="upcomingDrops-grow">
             
-                <div className="wrapperModal-info--p text-center">
+                <div className="wrapperModal-info--p text-center" >
                     <h4>{nft.name}</h4>
                 </div>
                 
@@ -49,7 +54,7 @@ const AllUpcomingDropsCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-s
                         <i className="fa fa-heart"></i><span>{nft.likes}</span>
                     </div>                            
                 </div> 
-            </div>
+            </div></Link>
         </div>             
     );
 };
