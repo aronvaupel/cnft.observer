@@ -12,6 +12,8 @@ import Articles from "../components/Articles";
 import { createGlobalStyle } from "styled-components";
 import News from "../components/News";
 import { Link } from "@reach/router";
+import Reveal from "react-awesome-reveal";
+import { keyframes } from "@emotion/react";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader .logo .d-block{
@@ -120,10 +122,22 @@ const GlobalStyles = createGlobalStyle`
 
 `;
 
+const fadeInUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 const homeone = () => {
   return (
     <div>
       <GlobalStyles />
+
       <section
         className="jumbotron no-bg"
         style={{ backgroundImage: `url(${"/img/background/8.jpg"})` }}
@@ -133,6 +147,8 @@ const homeone = () => {
       </section>
 
       <section className="container no-top no-bottom">
+        <div className="spacer-double"></div>
+        <div className="spacer-double"></div>
         <div className="row">
           <div className="spacer-double"></div>
           <div className="col-lg-12 mb-2 calendar-row">
@@ -175,28 +191,47 @@ const homeone = () => {
           </div>
         </div>
         <CarouselUpcomingDropsRedux />
+        <div className="spacer-double"></div>
+            <div className="spacer-double"></div>
       </section>
-
-      <section className="container no-top no-bottom">
-        <div className="row">
-          <div className="spacer-double"></div>
-          <div className="col-lg-12 mb-2 topProjects-row calendar-row">
-            <h2 className="headline-responsiveness">Top Projects</h2>
-            <span
-              onClick={() => window.open("#", "_self")}
-              className=" inline lead link-color"
-              id="calendar-span"
-            >
-              View all
-            </span>
+      <Reveal
+        className="onStep"
+        keyframes={fadeInUp}
+        delay={500}
+        duration={3000}
+        triggerOnce
+      >
+        <section
+          className=" fader extra-wide"
+          style={{
+            backgroundImage: `url(${"/img/ownPictures/clouds.jpg"})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="row container margin-sides">
+            <div className="spacer-double"></div>
+            <div className="col-lg-12 mb-2 topProjects-row calendar-row">
+              <h2 className="headline-responsiveness">Top Projects</h2>
+              <span
+                onClick={() => window.open("#", "_self")}
+                className=" inline lead link-color"
+                id="calendar-span"
+              >
+                View all
+              </span>
+            </div>
+            <div className="col-lg-12 topProjects-main">
+              <TopProjectsListRedux />
+            </div>
           </div>
-          <div className="col-lg-12 topProjects-main">
-            <TopProjectsListRedux />
-          </div>
-        </div>
-      </section>
-
-      <section className="container no-top no-bottom">
+          
+           <div className="spacer-double"></div>
+            <div className="spacer-double"></div>
+        </section>
+      </Reveal>
+      <section className="container no-top no-bottom ">
+         <div className="spacer-double"></div> <div className="spacer-double"></div>
         <div className="row">
           <div className="spacer-double"></div>
           <div className="col-lg-12 mb-2 calendar-row">
@@ -230,26 +265,44 @@ const homeone = () => {
           </div>
           <News />
         </div>
+         <div className="spacer-double"></div> <div className="spacer-double"></div>
       </section>
-
-      <section className="container no-top no-bottom">
-        <div className="row">
-          <div className="spacer-double"></div>
-          <div className="col-lg-12 mb-2 calendar-row">
-            <h2 className="headline-responsiveness">Statistics</h2>
-            <span
-              onClick={() => window.open("#", "_self")}
-              className=" inline lead link-color"
-              id="calendar-span"
-            >
-              View all
-            </span>
+      <Reveal
+        className="onStep"
+        keyframes={fadeInUp}
+        delay={500}
+        duration={3000}
+        triggerOnce
+      >
+        <section
+          className="no-top  fader extra-wide "
+          style={{
+            backgroundImage: `url(${"/img/gallery/2.jpg"})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="row container margin-sides">
+            <div className="spacer-double"></div>
+            <div className="spacer-double"></div>
+            <div className="col-lg-12 mb-2 calendar-row ">
+              <h2 className="headline-responsiveness">Statistics</h2>
+              <span
+                onClick={() => window.open("#", "_self")}
+                className=" inline lead link-color"
+                id="calendar-span"
+              >
+                View all
+              </span>
+            </div>
           </div>
-        </div>
-        <CarouselChartsRedux />
-      </section>
-
+          <CarouselChartsRedux />
+          <div className="spacer-double"></div>
+          <div className="spacer-double"></div>
+        </section>
+      </Reveal>
       <section className="container no-top no-bottom">
+         <div className="spacer-double"></div> <div className="spacer-double"></div>
         <div className="row">
           <div className="spacer-double"></div>
           <div className="col-lg-12 mb-3 calendar-row">

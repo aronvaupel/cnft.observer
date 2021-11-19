@@ -34,7 +34,7 @@ const CarouselChartsRedux = () => {
   }, [dispatch]);
 
   return (
-    <div className="nft">
+    <div className="nft container">
       <Slider {...carouselChart}>
         {charts &&
           charts.map((chart, index) => (
