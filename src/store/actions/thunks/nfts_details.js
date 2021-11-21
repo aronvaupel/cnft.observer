@@ -1,13 +1,13 @@
 import { Axios, Canceler } from '../../../core/axios';
 import * as actions from '..';
 
-export const fetchNftsBreakdown = () => async (dispatch, getState) => {
+export const fetchnftsDetailsBreakdown = () => async (dispatch, getState) => {
   
   //access the state
   const state = getState();
   console.log(state);
 
-  dispatch(actions.getNftBreakdown.request(Canceler.cancel));
+  dispatch(actions.getNftsDetailsBreakdown.request(Canceler.cancel));
 
   try {
     const { data } = await Axios.get('/mock_data/nfts_details.json', {
@@ -15,33 +15,17 @@ export const fetchNftsBreakdown = () => async (dispatch, getState) => {
       params: {}
     });
 
-    dispatch(actions.getNftBreakdown.success(data));
+    dispatch(actions.getNftsDetailsBreakdown.success(data));
   } catch (err) {
-    dispatch(actions.getNftBreakdown.failure(err));
+    dispatch(actions.getNftsDetailsBreakdown.failure(err));
   }
 };
 
 
 
-export const fetchNftShowcase = () => async (dispatch) => {
+export const fetchNftsDetailsShowcase = () => async (dispatch) => {
 
-  dispatch(actions.getNftShowcase.request(Canceler.cancel));
-
-  try {
-    const { data } = await Axios.get('/mock_data/nft_showcase.json', {
-      cancelToken: Canceler.token,
-      params: {}
-    });
-
-    dispatch(actions.getNftShowcase.success(data));
-  } catch (err) {
-    dispatch(actions.getNftShowcase.failure(err));
-  }
-};
-
-export const fetchNftDetail = () => async (dispatch) => {
-
-  dispatch(actions.getNftDetail.request(Canceler.cancel));
+  dispatch(actions.getNftsDetailsShowcase.request(Canceler.cancel));
 
   try {
     const { data } = await Axios.get('/mock_data/nft_details.json', {
@@ -49,8 +33,24 @@ export const fetchNftDetail = () => async (dispatch) => {
       params: {}
     });
 
-    dispatch(actions.getNftDetail.success(data));
+    dispatch(actions.getNftsDetailsShowcase.success(data));
   } catch (err) {
-    dispatch(actions.getNftDetail.failure(err));
+    dispatch(actions.getNftsDetailsShowcase.failure(err));
+  }
+};
+
+export const fetchNftsDetailsDetail = () => async (dispatch) => {
+
+  dispatch(actions.getNftsDetailsDetail.request(Canceler.cancel));
+
+  try {
+    const { data } = await Axios.get('/mock_data/nft_details.json', {
+      cancelToken: Canceler.token,
+      params: {}
+    });
+
+    dispatch(actions.getNftsDetailsDetail.success(data));
+  } catch (err) {
+    dispatch(actions.getNftsDetailsDetail.failure(err));
   }
 };

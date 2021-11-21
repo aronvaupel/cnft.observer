@@ -4272,34 +4272,43 @@ img.img-rounded {
   }
 }
 
+
 .wrapperModal-top {
   display: flex;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: flex-start;
   width: 100%;
 }
-.wrapperModal-top-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 0 0 1rem;
-}
+
 
 .wrapperModal-close {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
   color: #8364e2;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
+
+.wrapperModal-close:hover{
+  
+    text-decoration: underline;
+ 
+}
+
 
 .wrapperModal-title {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 100%;
   font-size: 1.8rem;
+}
+
+.wrapperModal-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapperModal-links {
@@ -4310,15 +4319,15 @@ img.img-rounded {
 .wrapperModal-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem;
   width: 100%;
   font-weight: 400;
+  font-size: .8rem;
 }
 
 .wrapperModal-text {
   font-size: 0.8rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .modal-header {
@@ -4337,24 +4346,16 @@ img.img-rounded {
   height: auto;
 }
 
-.wrapperModal-detailLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .modal {
   margin-top: 120px;
   z-index: 99999;
 }
 
-.modal-backdrop.show {
-  backdrop-filter: blur(8px);
-  opacity: 0.5;
-}
+
 
 .wrapperModal-img {
-  padding-top: 0.5rem;
   width: 50%;
 }
 
@@ -4379,6 +4380,7 @@ img.img-rounded {
 .wrapperModal-info--p {
   color: #fff;
   font-weight: 400;
+  
 }
 
 .wrapperChart {
@@ -4698,11 +4700,6 @@ justify-content: center;
 align-items: center;
 }
 
-.extra-wide{
-  width: 100vw !important;
-  padding-bottom:0;
-}
-
 .margin-sides{
   margin: auto;
 }
@@ -4732,4 +4729,12 @@ align-items: center;
 
 #increase-font-size{
   font-size: 1.5rem;
+}
+
+.itemDetails-likes{
+  display: flex;
+}
+
+.item_info_like{
+  padding-right: 0.5rem;
 }

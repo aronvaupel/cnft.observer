@@ -21,6 +21,24 @@ export const getNftDetail = asyncAction(
     'nft/GET_NFT_DETAIL_FAIL'
 )();
 
+export const getNftsDetailsBreakdown = asyncAction(
+    'nft/GET_NFT_BREAKDOWN',
+    'nft/GET_NFT_BREAKDOWN_SUCCESS',
+    'nft/GET_NFT_BREAKDOWN_FAIL'
+)();
+
+export const getNftsDetailsShowcase = asyncAction(
+    'nft/GET_NFT_SHOWCASE',
+    'nft/GET_NFT_SHOWCASE_SUCCESS',
+    'nft/GET_NFT_SHOWCASE_FAIL'
+)();
+
+export const getNftsDetailsDetail = asyncAction(
+    'nft/GET_NFT_DETAIL',
+    'nft/GET_NFT_DETAIL_SUCCESS',
+    'nft/GET_NFT_DETAIL_FAIL'
+)();
+
 export const getUpcomingDropsBreakdown = asyncAction(
     'nft/GET_UPCOMINGDROPS_BREAKDOWN',
     'nft/GET_UPCOMINGDROPS_BREAKDOWN_SUCCESS',

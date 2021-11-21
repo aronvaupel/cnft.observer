@@ -4,15 +4,22 @@ import Clock from "../components/Clock";
 import Footer from "../components/footer";
 import { createGlobalStyle } from "styled-components";
 import * as selectors from "../../store/selectors";
-import { fetchNftDetail } from "../../store/actions/thunks";
-import Checkout from "../components/Checkout";
+import { fetchNftsDetailsDetail } from "../../store/actions/thunks";
 import { Link } from "@reach/router";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
+import Discord from "../../assets/svg/ic_outline-discord";
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.white {
     background: #212428;
+  }
+  .btn-main{
+    background: #8364e2;
+   
+  }
+  .btn-main:hover{
+    box-shadow: 2px 2px 20px 0px rgb(131, 100, 226, 1)
   }
 `;
 
@@ -54,13 +61,13 @@ const ItemDetailPageRedux = () => {
   };
 
   const dispatch = useDispatch();
-  const nftDetailState = useSelector(selectors.nftDetailState);
-  const nft = nftDetailState.data ? nftDetailState.data : [];
+  const nftsDetailsState = useSelector(selectors.nftDetailState);
+  const nft = nftsDetailsState.data ? nftsDetailsState.data : [];
 
   const [openCheckout, setOpenCheckout] = React.useState(false);
 
   useEffect(() => {
-    dispatch(fetchNftDetail());
+    dispatch(fetchNftsDetailsDetail());
   }, [dispatch]);
 
   return (
@@ -93,7 +100,7 @@ const ItemDetailPageRedux = () => {
                     <Clock deadline={nft.item_deadline} />
                   </div>
                 )}
-                
+                <div className="itemDetails-likes">
                 <div className="item_info_like align-center">
                   <i className="fa fa-heart"></i>
                   {nft.item_likes}
@@ -101,7 +108,7 @@ const ItemDetailPageRedux = () => {
                 <div className="item_info_views align-center">
                   <i className="fa fa-eye"></i>
                   {nft.item_views}
-                </div>
+                </div></div>
               </div>
               <div className="spacer-single "></div>{" "}
               <Reveal
@@ -115,84 +122,92 @@ const ItemDetailPageRedux = () => {
 
                 <p>{nft.item_description}</p>
                 {/* button untuk checkout */}
-                <button
-                  className="btn-main lead mb-5"
-                  onClick={() => setOpenCheckout(true)}
-                >
-                  Checkout
-                </button>
+                
               </Reveal>
-              <div className="de_tab">
-                <ul className="de_nav">
-                  <li id="Mainbtn" className="active">
-                    <span onClick={handleBtnClick}>Bids</span>
-                  </li>
-                  <li id="Mainbtn1" className="">
-                    <span onClick={handleBtnClick1}>History</span>
-                  </li>
-                </ul>
+              <div className="wrapperModal-footer">
+                    <div className="wrapperModal-links">
+                      {nft.twitter ? (
+                        <div className="col-lg-4 col-md-6 demo-icon-wrap wrapperModal-links--box">
+                          <i
+                            className="fa fa-fw"
+                            aria-hidden="true"
+                            title="Twitter-Icon"
+                          >
+                            
+                          </i>
+                          <span className="text-grey">[&amp;#xf099;]</span>
+                        </div>
+                      ) : null}
 
-                <div className="de_tab_content">
-                  {openMenu && (
-                    <div className="tab-1 onStep fadeIn">
-                      {nft.bids &&
-                        nft.bids.map((bid, index) => (
-                          <div className="p_list" key={index}>
-                            <div className="p_list_pp">
-                              <span>
-                                <img className="lazy" src={bid.avatar} alt="" />
-                                <i className="fa fa-check"></i>
-                              </span>
-                            </div>
-                            <div className="p_list_info">
-                              Bid {bid.is_author && "accepted"}{" "}
-                              <b>{bid.value} ETH</b>
-                              <span>
-                                by <b>{bid.username}</b> at {bid.timestamp}
-                              </span>
-                            </div>
-                          </div>
-                        ))}
-                    </div>
-                  )}
+                      {nft.discord ? (
+                        <div className="col-lg-4 col-md-6 demo-icon-wrap wrapperModal-links--box">
+                          <i
+                            className="fa fa-fw box-discord"
+                            aria-hidden="true"
+                            title="Discord-Icon"
+                          >
+                            <Discord />
+                          </i>
+                          <span className="text-grey"></span>
+                        </div>
+                      ) : null}
 
-                  {openMenu1 && (
-                    <div className="tab-2 onStep fadeIn">
-                      {nft.history &&
-                        nft.history.map((bid, index) => (
-                          <div className="p_list" key={index}>
-                            <div className="p_list_pp">
-                              <span>
-                                <img className="lazy" src={bid.avatar} alt="" />
-                                <i className="fa fa-check"></i>
-                              </span>
-                            </div>
-                            <div className="p_list_info">
-                              Bid {bid.is_author && "accepted"}{" "}
-                              <b>{bid.value} ETH</b>
-                              <span>
-                                by <b>{bid.username}</b> at {bid.timestamp}
-                              </span>
-                            </div>
-                          </div>
-                        ))}
+                      {nft.projectURL ? (
+                        <div className="col-lg-4 col-md-6 demo-icon-wrap-s2">
+                          <span
+                            aria-hidden="true"
+                            className="icon-global"
+                          ></span>{" "}
+                        </div>
+                      ) : null}
+                      
                     </div>
-                  )}
-                </div>
-              </div>
+                    <Link
+                      to={`/articles/safety`}
+                      style={{
+                        textDecoration: "none",
+                      }}
+                    >
+                       
+                      <div className="wrapperModal-detailLink btn-main">
+                        Safety Advice
+                      </div>
+                    </Link>
+                  </div>
             </div>
+          <div className="wrapperModal-info">
+                        <p>
+                          Drop Date:{" "}
+                          <span className="wrapperModal-info--p">
+                            {" "}
+                            {nft.dropdate}{" "}
+                          </span>
+                        </p>
+                        <p>
+                          Drop Time (UTC):{" "}
+                          <span className="wrapperModal-info--p">
+                            {nft.droptime}{" "}
+                          </span>
+                        </p>
+                        <p>
+                          Mint price:{" "}
+                          <span className="wrapperModal-info--p">
+                            {nft.mintprice}{" "}
+                          </span>
+                        </p>
+                        <p>
+                          Total NFTs:{" "}
+                          <span className="wrapperModal-info--p">
+                            {nft.nfts}{" "}
+                          </span>
+                        </p>
+                      </div>
           </div>
         </div>
+        
       </section>
       <Footer />
-      {openCheckout && (
-        <div className="checkout">
-          <Checkout />
-          <button className="btn-close" onClick={() => setOpenCheckout(false)}>
-            x
-          </button>
-        </div>
-      )}
+     
     </div>
   );
 };
