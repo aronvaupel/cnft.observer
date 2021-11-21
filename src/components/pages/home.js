@@ -162,9 +162,7 @@ const homeone = () => {
               <span
                 className=" inline lead link-color"
                 id="calendar-span"
-                style={{
-                  textDecoration: "none",
-                }}
+                
               >
                 View all
               </span>
@@ -191,26 +189,15 @@ const homeone = () => {
           </div>
         </div>
         <CarouselUpcomingDropsRedux />
-        <div className="spacer-double"></div>
-            <div className="spacer-double"></div>
+        
       </section>
-      <Reveal
-        className="onStep"
-        keyframes={fadeInUp}
-        delay={500}
-        duration={3000}
-        triggerOnce
-      >
+     
         <section
-          className=" fader extra-wide"
-          style={{
-            backgroundImage: `url(${"/img/ownPictures/clouds.jpg"})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+          className="container "
+         
         >
-          <div className="row container margin-sides">
-            <div className="spacer-double"></div>
+          <div className="row ">
+            
             <div className="col-lg-12 mb-2 topProjects-row calendar-row">
               <h2 className="headline-responsiveness">Top Projects</h2>
               <span
@@ -226,14 +213,12 @@ const homeone = () => {
             </div>
           </div>
           
-           <div className="spacer-double"></div>
-            <div className="spacer-double"></div>
         </section>
-      </Reveal>
+    
       <section className="container no-top no-bottom ">
-         <div className="spacer-double"></div> <div className="spacer-double"></div>
+        
         <div className="row">
-          <div className="spacer-double"></div>
+         
           <div className="col-lg-12 mb-2 calendar-row">
             <h2 className="headline-responsiveness">Hot Collections</h2>
             <span
@@ -253,6 +238,7 @@ const homeone = () => {
       <section className="container no-top no-bottom">
         <div className="row">
           <div className="spacer-double"></div>
+          <div className="spacer-double"></div>
           <div className="col-lg-12 mb-3 calendar-row">
             <h2 className="headline-responsiveness">News</h2>
             <span
@@ -265,9 +251,27 @@ const homeone = () => {
           </div>
           <News />
         </div>
-         <div className="spacer-double"></div> <div className="spacer-double"></div>
+        
       </section>
-      <Reveal
+      
+      <section className="container no-top no-bottom">
+       
+        <div className="row">
+          <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-3 calendar-row">
+            <h2 className="headline-responsiveness">Basics</h2>
+            <span
+              onClick={() => window.open("#", "_self")}
+              className=" inline lead link-color"
+              id="calendar-span"
+            >
+              View all
+            </span>
+          </div>
+          <Articles />
+        </div>
+      </section>
+<Reveal
         className="onStep"
         keyframes={fadeInUp}
         delay={500}
@@ -277,7 +281,7 @@ const homeone = () => {
         <section
           className="no-top  fader extra-wide "
           style={{
-            backgroundImage: `url(${"/img/gallery/2.jpg"})`,
+            backgroundImage: `url(${"/img/ownPictures/wave.jpg"})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -301,24 +305,6 @@ const homeone = () => {
           <div className="spacer-double"></div>
         </section>
       </Reveal>
-      <section className="container no-top no-bottom">
-         <div className="spacer-double"></div> <div className="spacer-double"></div>
-        <div className="row">
-          <div className="spacer-double"></div>
-          <div className="col-lg-12 mb-3 calendar-row">
-            <h2 className="headline-responsiveness">Basics</h2>
-            <span
-              onClick={() => window.open("#", "_self")}
-              className=" inline lead link-color"
-              id="calendar-span"
-            >
-              View all
-            </span>
-          </div>
-          <Articles />
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
