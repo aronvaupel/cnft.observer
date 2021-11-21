@@ -2892,8 +2892,7 @@ i.font60 {
   text-align: center;
   display: flex;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 1rem 0 1rem 0;
   justify-content: center;
 }
 .nft__item_wrap span {
@@ -4623,7 +4622,7 @@ img.img-rounded {
   width: 100%;
   right: 0;
   position: static;
-  margin-top: 10px;
+ 
 }
 
 #headline-adjust {
@@ -4721,13 +4720,14 @@ align-items: center;
 .drops-card-likes{
   display: flex;
   flex-direction: column;
-  align-items: space-evenly;
+  align-items: space-between;
   justify-content: center;
   font-size: 10px;
 }
 
-.margin-bottom{
+.margin-heart{
  margin-bottom: 3px;
+ margin-left:3px;
 }
 
 #increase-font-size{

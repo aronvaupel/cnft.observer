@@ -25,10 +25,10 @@ const AllUpcomingDropsCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-s
           }}>
             <div className="nft__item m-0" id="upcomingDrops-grow">
             
-                <div className="wrapperModal-info--p text-even margin-bottom" >
+                <div className="wrapperModal-info--p text-even" >
                     <h4 id="increase-font-size">{nft.name}</h4>
                    {nft.likes&& <div className=" drops-card-likes">
-                        <i className="fa fa-heart margin-bottom"></i><span>{nft.likes}</span>
+                        <i className="fa fa-heart margin-heart"></i><span>{nft.likes}</span>
                     </div>    }   
                 </div>
                 
