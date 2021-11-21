@@ -256,6 +256,28 @@ const homeone = () => {
         </div>
         
       </section>
+
+      <section
+          className="no-top no-bottom container "
+          
+        >
+          <div className="row ">
+             <div className="spacer-double"></div>
+            <div className="col-lg-12 mb-2 calendar-row ">
+              <h2 className="headline-responsiveness">Statistics</h2>
+              <span
+                onClick={() => window.open("#", "_self")}
+                className=" inline lead link-color"
+                id="calendar-span"
+              >
+                View all
+              </span>
+            </div>
+          </div>
+          <CarouselChartsRedux />
+          
+          <div className="spacer-double"></div>
+        </section>
       
       <section className="container no-top no-bottom">
        
@@ -274,40 +296,9 @@ const homeone = () => {
           <Articles />
         </div>
       </section>
-<Reveal
-        className="onStep"
-        keyframes={fadeInUp}
-        delay={500}
-        duration={3000}
-        triggerOnce
-      >
-        <section
-          className="no-top  fader extra-wide "
-          style={{
-            backgroundImage: `url(${"/img/ownPictures/wave.jpg"})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="row container margin-sides">
-            <div className="spacer-double"></div>
-            <div className="spacer-double"></div>
-            <div className="col-lg-12 mb-2 calendar-row ">
-              <h2 className="headline-responsiveness">Statistics</h2>
-              <span
-                onClick={() => window.open("#", "_self")}
-                className=" inline lead link-color"
-                id="calendar-span"
-              >
-                View all
-              </span>
-            </div>
-          </div>
-          <CarouselChartsRedux />
-          <div className="spacer-double"></div>
-          <div className="spacer-double"></div>
-        </section>
-      </Reveal>
+
+        
+     
       <Footer />
     </div>
   );
