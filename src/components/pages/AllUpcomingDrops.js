@@ -61,14 +61,13 @@ const AllUpcomingDrops = function () {
       <GlobalStyles />
 
       <section
-        id="profile_banner"
+        id="drop-banner"
         className="jumbotron breadcumb center-elements fader"
         style={{
           backgroundImage: `url(${"/img/ownPictures/drop.jpg"})`,
           backgroundSize: "cover",
         }}
       >
-        <div className="spacer-single "></div>
         <div id="headline-adjust">
           <Reveal
             className="onStep"
@@ -77,7 +76,7 @@ const AllUpcomingDrops = function () {
             duration={900}
             triggerOnce
           >
-            <h1 className="col-white">All Upcoming Drops</h1>
+            <h1 className="col-white outline">All Upcoming Drops</h1>
           </Reveal>
          
           <Reveal
@@ -87,15 +86,16 @@ const AllUpcomingDrops = function () {
             duration={900}
             triggerOnce
           >
-            <p className="lead col-white">Never miss a Drop again!</p>
+            <p className="lead col-white outline">Never miss a Drop again!</p>
           </Reveal>
         </div>
       </section>
 
-      <section className="container no-top">
+      <section className="container  no-top no-bottom">
+        <div className="spacer-single"></div>
         <div className="row">
           <div className="col-lg-12">
-            <div className="items_filter addMargin">
+            <div className="items_filter">
               <ul className="de_nav">
                 <li>
                    <form className="row form-dark" id="form_quick_search" name="form_quick_search">

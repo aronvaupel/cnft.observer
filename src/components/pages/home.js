@@ -147,10 +147,30 @@ const homeone = () => {
       </section>
 
       <section className="container no-top no-bottom">
-        <div className="spacer-double"></div>
-        <div className="spacer-double"></div>
         <div className="row">
-          <div className="spacer-double"></div>
+          <div className="spacer-double"></div> <div className="spacer-double"></div>
+          <div className="col-lg-12 mb-2 calendar-row">
+            <h2 className="headline-responsiveness">Upcoming Drops</h2>
+            <Link
+              to="/upcoming-cnft-drops/"
+              id="calendar-span"
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              <span className="inline lead link-color">View all</span>
+            </Link>
+          </div>
+        </div>
+        <CarouselUpcomingDropsRedux />
+        
+      </section>
+
+      <section className="container no-top no-bottom">
+       
+        <div className="spacer-single"></div>
+        <div className="row">
+         
           <div className="col-lg-12 mb-2 calendar-row">
             <h2 className="headline-responsiveness">Recently Sold</h2>
             <Link
@@ -172,32 +192,15 @@ const homeone = () => {
         <CarouselRecentlySoldRedux />
       </section>
 
-      <section className="container no-top no-bottom">
-        <div className="row">
-          <div className="spacer-double"></div>
-          <div className="col-lg-12 mb-2 calendar-row">
-            <h2 className="headline-responsiveness">Upcoming Drops</h2>
-            <Link
-              to="/upcoming-cnft-drops/"
-              id="calendar-span"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              <span className="inline lead link-color">View all</span>
-            </Link>
-          </div>
-        </div>
-        <CarouselUpcomingDropsRedux />
-        
-      </section>
+      
      
         <section
-          className="container "
+          className="container no-top no-bottom"
          
-        >
+        > <div className="spacer-double"></div>
           <div className="row ">
-            
+                   
+
             <div className="col-lg-12 mb-2 topProjects-row calendar-row">
               <h2 className="headline-responsiveness">Top Projects</h2>
               <span
@@ -216,7 +219,7 @@ const homeone = () => {
         </section>
     
       <section className="container no-top no-bottom ">
-        
+        <div className="spacer-single"></div>
         <div className="row">
          
           <div className="col-lg-12 mb-2 calendar-row">
@@ -237,7 +240,7 @@ const homeone = () => {
 
       <section className="container no-top no-bottom">
         <div className="row">
-          <div className="spacer-double"></div>
+         
           <div className="spacer-double"></div>
           <div className="col-lg-12 mb-3 calendar-row">
             <h2 className="headline-responsiveness">News</h2>
@@ -257,7 +260,7 @@ const homeone = () => {
       <section className="container no-top no-bottom">
        
         <div className="row">
-          <div className="spacer-double"></div>
+          <div className="spacer-single"></div>
           <div className="col-lg-12 mb-3 calendar-row">
             <h2 className="headline-responsiveness">Basics</h2>
             <span

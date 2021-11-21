@@ -4623,6 +4623,7 @@ img.img-rounded {
   width: 100%;
   right: 0;
   position: static;
+  margin-top: 10px;
 }
 
 #headline-adjust {
@@ -4638,7 +4639,8 @@ img.img-rounded {
   height: 450px;
 }
 .center-elements {
-  padding-top: 200px;
+  padding-bottom: 50px;
+  padding-top: 150px;
 }
 
 .cursor-pointer:hover {
@@ -4704,4 +4706,30 @@ align-items: center;
 
 .margin-sides{
   margin: auto;
+}
+
+.outline{
+  text-shadow: 0 0 1px #26292D, 0 0 1px #26292D, 0 0 1px #26292D, 0 0 1px #26292D;
+}
+
+.text-even{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drops-card-likes{
+  display: flex;
+  flex-direction: column;
+  align-items: space-evenly;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.margin-bottom{
+ margin-bottom: 3px;
+}
+
+#increase-font-size{
+  font-size: 1.5rem;
 }

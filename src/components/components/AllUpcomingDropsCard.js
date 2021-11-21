@@ -25,14 +25,17 @@ const AllUpcomingDropsCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-s
           }}>
             <div className="nft__item m-0" id="upcomingDrops-grow">
             
-                <div className="wrapperModal-info--p text-center" >
-                    <h4>{nft.name}</h4>
+                <div className="wrapperModal-info--p text-even margin-bottom" >
+                    <h4 id="increase-font-size">{nft.name}</h4>
+                   {nft.likes&& <div className=" drops-card-likes">
+                        <i className="fa fa-heart margin-bottom"></i><span>{nft.likes}</span>
+                    </div>    }   
                 </div>
                 
-                <div className="nft__item_wrap" style={{height: `${height}px`}}>
+                <div className="nft__item_wrap" style={{height: `${height}px`}} >
                 <Outer >
                     <span>
-                        <img onLoad={onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt=""/>
+                        <img onLoad={onImgLoad} src={nft.previewImg} className="lazy nft__item_preview" alt="" id="fix-picture-size"/>
                     </span>
                 </Outer>
                 </div>
@@ -50,9 +53,7 @@ const AllUpcomingDropsCard = ({ nft, className = 'd-item col-lg-3 col-md-6 col-s
                       <p>Mint price: <span className='wrapperModal-info--p'>{nft.mintprice} </span></p>
                       <p>Total NFTs: <span className='wrapperModal-info--p'>{nft.nfts} </span></p>
                     </div>
-                    <div className="nft__item_like">
-                        <i className="fa fa-heart"></i><span>{nft.likes}</span>
-                    </div>                            
+                                          
                 </div> 
             </div></Link>
         </div>             

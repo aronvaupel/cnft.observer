@@ -38,7 +38,7 @@ const AllUpcomingDropsRedux = ({ showLoadMore = true, shuffle = false }) => {
                 <AllUpcomingDropsCard nft={nft} key={index} onImgLoad={onImgLoad} clockTop={true} height={height} />
             ))}
             { showLoadMore && nfts.length <= 20 &&
-                <div className='col-lg-12'>
+                <div className='col-lg-12 no-top no-bottom'>
                     <div className="spacer-single"></div>
                     <span onClick={loadMore} className="btn-main lead m-auto">Load More</span>
                 </div>
