@@ -121,6 +121,12 @@ const AllNews = function () {
                 <li id="Mainbtn1" className="">
                   <span onClick={handleBtnClick1}>Date</span>
                 </li>
+                <li id="Mainbtn1" className="">
+                  <span onClick={handleBtnClick1}>Only News</span>
+                </li>
+                <li id="Mainbtn1" className="">
+                  <span onClick={handleBtnClick1}>Only Basics</span>
+                </li>
               </ul>
             </div>
           </div>
