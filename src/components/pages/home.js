@@ -251,6 +251,12 @@ const homeone = () => {
           <div className="spacer-double"></div>
           <div className="col-lg-12 mb-3 calendar-row">
             <h2 className="headline-responsiveness">News</h2>
+             <Link
+              to="/news-cnft"
+              style={{
+                textDecoration: "none",
+              }}
+            >
             <span
               onClick={() => window.open("#", "_self")}
               className=" inline lead link-color"
@@ -258,6 +264,7 @@ const homeone = () => {
             >
               View all
             </span>
+            </Link>
           </div>
           <News />
         </div>

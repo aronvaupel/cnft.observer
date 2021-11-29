@@ -35,7 +35,8 @@ import Progressbar from './pages/progressbar';
 import Tabs from './pages/tabs';
 import AllUpcomingDrops from './pages/AllUpcomingDrops';
 import AllRecentlySold from './pages/AllRecentlySold';
-import AllHotCollections from './pages/AllHotCollections'
+import AllHotCollections from './pages/AllHotCollections';
+import AllNews from './pages/AllNews'
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -80,6 +81,7 @@ const app= () => (
         <AllUpcomingDrops path="/upcoming-cnft-drops/" />
         <AllRecentlySold path="/recently-sold-cnft/" />
         <AllHotCollections path="/collections-cnft/" />
+        <AllNews path="/news-cnft/" />
         <ItemDetailPageRedux path="/cnft-details/:id"/>
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
