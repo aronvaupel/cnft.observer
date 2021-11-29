@@ -224,6 +224,12 @@ const homeone = () => {
          
           <div className="col-lg-12 mb-2 calendar-row">
             <h2 className="headline-responsiveness">Hot Collections</h2>
+             <Link
+              to="/collections-cnft"
+              style={{
+                textDecoration: "none",
+              }}
+            >
             <span
               onClick={() => window.open("#", "_self")}
               className=" inline lead link-color"
@@ -231,6 +237,7 @@ const homeone = () => {
             >
               View all
             </span>
+            </Link>
           </div>
           <div className="col-lg-12">
             <CarouselCollectionRedux />

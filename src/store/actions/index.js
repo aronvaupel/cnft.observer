@@ -165,6 +165,24 @@ export const getNftsSalesDetail = asyncAction(
     'nft/GET_SALES_DETAIL_FAIL'
 )();
 
+export const getAllHotCollectionsShowcase = asyncAction(
+    'nft/GET_ALLHOTCOLLECTIONS_SHOWCASE',
+    'nft/GET_ALLHOTCOLLECTIONS_SHOWCASE_SUCCESS',
+    'nft/GET_ALLHOTCOLLECTIONS_SHOWCASE_FAIL'
+)();
+
+export const getAllHotCollectionsBreakdown = asyncAction(
+    'nft/GET_ALLHOTCOLLECTIONS_BREAKDOWN',
+    'nft/GET_ALLHOTCOLLECTIONS_BREAKDOWN_SUCCESS',
+    'nft/GET_ALLHOTCOLLECTIONS_BREAKDOWN_FAIL'
+)();
+
+export const getAllHotCollectionsDetail = asyncAction(
+    'nft/GET_ALLHOTCOLLECTIONS_DETAIL',
+    'nft/GET_ALLHOTCOLLECTIONS_DETAIL_SUCCESS',
+    'nft/GET_ALLHOTCOLLECTIONS_DETAIL_FAIL'
+)();
+
 
 
 export const clearNfts = action('nft/CLEAR_ALL_NFTS')();

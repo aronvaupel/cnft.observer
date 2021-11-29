@@ -108,7 +108,7 @@ const Header= function() {
                     alt="#"
                   />
                   <img
-                    src="/img/logo-light.png"
+                    src="/img/logo-3.png"
                     className="img-fluid d-none"
                     alt="#"
                   />

@@ -1,0 +1,66 @@
+[
+    {
+        "name" : "Cool Collection",
+        "previewImg" : "/img/collections/coll-1.jpg",
+        "likes" : "255",
+        "project" : "Project Group",
+        "mintprice" : "5 ADA",
+        "total" : "10000"
+    },
+     {
+        "name" : "Cool Collection",
+        "previewImg" : "/img/collections/coll-1.jpg",
+        "likes" : "255",
+        "project" : "Project Group",
+        "mintprice" : "5 ADA",
+        "total" : "10000"
+    },
+     {
+        "name" : "Cool Collection",
+        "previewImg" : "/img/collections/coll-1.jpg",
+        "likes" : "255",
+        "project" : "Project Group",
+        "mintprice" : "5 ADA",
+        "total" : "10000"
+    },
+     {
+        "name" : "Cool Collection",
+        "previewImg" : "/img/collections/coll-1.jpg",
+        "likes" : "255",
+        "project" : "Project Group",
+        "mintprice" : "5 ADA",
+        "total" : "10000"
+    },
+     {
+        "name" : "Cool Collection",
+        "previewImg" : "/img/collections/coll-1.jpg",
+        "likes" : "255",
+        "project" : "Project Group",
+        "mintprice" : "5 ADA",
+        "total" : "10000"
+    },
+     {
+        "name" : "Cool Collection",
+        "previewImg" : "/img/collections/coll-1.jpg",
+        "likes" : "255",
+        "project" : "Project Group",
+        "mintprice" : "5 ADA",
+        "total" : "10000"
+    },
+     {
+        "name" : "Cool Collection",
+        "previewImg" : "/img/collections/coll-1.jpg",
+        "likes" : "255",
+        "project" : "Project Group",
+        "mintprice" : "5 ADA",
+        "total" : "10000"
+    }, {
+        "name" : "Cool Collection",
+        "previewImg" : "/img/collections/coll-1.jpg",
+        "likes" : "255",
+        "project-by" : "Project Group",
+        "mintprice" : "5 ADA",
+        "total" : "10000"
+    }
+  
+]

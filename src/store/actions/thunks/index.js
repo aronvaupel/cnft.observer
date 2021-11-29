@@ -8,4 +8,5 @@ export * from './articles';
 export * from './news';
 export * from './nfts_details';
 export * from './nfts_sales';
+export * from './hot_collections'
 

@@ -9,7 +9,8 @@ import filterReducer from './filters';
 import articlesReducer from './articles';
 import newsReducer from './news';
 import nftsDetailsReducer from './nfts_details';
-import nftsSalesReducer from './nfts_sales'
+import nftsSalesReducer from './nfts_sales';
+import allHotCollectionsReducer from './hot_collections'
 
 export const rootReducer = combineReducers({
   NFT: nftReducer,
@@ -22,7 +23,8 @@ export const rootReducer = combineReducers({
   articles: articlesReducer,
   news: newsReducer,
   nftsDetails: nftsDetailsReducer,
-  nftsSales: nftsSalesReducer
+  nftsSales: nftsSalesReducer,
+  allHotCollections: allHotCollectionsReducer
 });
 
 const reducers = (state, action) => rootReducer(state, action);
