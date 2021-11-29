@@ -33,7 +33,8 @@ import Accordion from './pages/accordion';
 import Alerts from './pages/alerts';
 import Progressbar from './pages/progressbar';
 import Tabs from './pages/tabs';
-import AllUpcomingDrops from './pages/AllUpcomingDrops'
+import AllUpcomingDrops from './pages/AllUpcomingDrops';
+import AllRecentlySold from './pages/AllRecentlySold';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -76,6 +77,7 @@ const app= () => (
         <Home2 path="/home2" />
 
         <AllUpcomingDrops path="/upcoming-cnft-drops/" />
+        <AllRecentlySold path="/recently-sold-cnft/" />
         <ItemDetailPageRedux path="/cnft-details/:id"/>
         <Explore path="/explore" />
         <Explore2 path="/explore2" />

@@ -174,7 +174,7 @@ const homeone = () => {
           <div className="col-lg-12 mb-2 calendar-row">
             <h2 className="headline-responsiveness">Recently Sold</h2>
             <Link
-              to="/allUpcomingDrops"
+              to="/recently-sold-cnft"
               style={{
                 textDecoration: "none",
               }}

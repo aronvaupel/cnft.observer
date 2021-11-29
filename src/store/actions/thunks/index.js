@@ -7,4 +7,5 @@ export * from './charts';
 export * from './articles';
 export * from './news';
 export * from './nfts_details';
+export * from './nfts_sales';
 
