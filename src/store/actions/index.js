@@ -183,6 +183,24 @@ export const getAllHotCollectionsDetail = asyncAction(
     'nft/GET_ALLHOTCOLLECTIONS_DETAIL_FAIL'
 )();
 
+export const getAllProjects = asyncAction(
+    'nft/GET_ALLPROJECTS',
+    'nft/GET_ALLPROJECTS_SUCCESS',
+    'nft/GET_ALLPROJECTS_FAIL'
+)();
+
+export const getAllProjectsRanking = asyncAction(
+    'nft/GET_ALLPROJECTS_RANKING',
+    'nft/GET_ALLPROJECTS_RANKING_SUCCESS',
+    'nft/GET_ALLPROJECTS_RANKING_FAIL'
+)();
+
+export const getAllProjectsDetail = asyncAction(
+    'nft/GET_ALLALLPROJECTS_DETAIL',
+    'nft/GET_ALLALLPROJECTS_DETAIL_SUCCESS',
+    'nft/GET_ALLALLPROJECTS_DETAIL_FAIL'
+)();
+
 
 
 export const clearNfts = action('nft/CLEAR_ALL_NFTS')();

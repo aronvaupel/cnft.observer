@@ -203,13 +203,19 @@ const homeone = () => {
 
             <div className="col-lg-12 mb-2 topProjects-row calendar-row">
               <h2 className="headline-responsiveness">Top Projects</h2>
+                          <Link
+              to="projects-cnft"
+              style={{
+                textDecoration: "none",
+              }}
+            >
               <span
                 onClick={() => window.open("#", "_self")}
                 className=" inline lead link-color"
                 id="calendar-span"
               >
                 View all
-              </span>
+              </span></Link>
             </div>
             <div className="col-lg-12 topProjects-main">
               <TopProjectsListRedux />

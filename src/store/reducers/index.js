@@ -10,7 +10,9 @@ import articlesReducer from './articles';
 import newsReducer from './news';
 import nftsDetailsReducer from './nfts_details';
 import nftsSalesReducer from './nfts_sales';
-import allHotCollectionsReducer from './hot_collections'
+import allHotCollectionsReducer from './hot_collections';
+import allProjectsReducer from './allProjects';
+import allProjectsRankingReducer from './allProjects'
 
 export const rootReducer = combineReducers({
   NFT: nftReducer,
@@ -24,7 +26,9 @@ export const rootReducer = combineReducers({
   news: newsReducer,
   nftsDetails: nftsDetailsReducer,
   nftsSales: nftsSalesReducer,
-  allHotCollections: allHotCollectionsReducer
+  allHotCollections: allHotCollectionsReducer,
+  allProjects: allProjectsReducer,
+  allProjectsRanking: allProjectsRankingReducer
 });
 
 const reducers = (state, action) => rootReducer(state, action);

@@ -28,6 +28,9 @@ export const recentlySoldDetailState = (state) => state.recentlySold.recentlySol
 export const allHotCollectionsBreakdownState = (state) => state.allHotCollections.allHotCollectionsBreakdown;
 export const allHotCollectionsSAllHowcaseState = (state) => state.allHotCollections.allHotCollectionsShowcase;
 export const allHotCollectionsDetailState = (state) => state.allHotCollections.allHotCollectionsDetail;
+export const allProjectsState = (state) => state.allProjects.allProjects;
+export const allProjectsRankingState = (state) => state.allProjects.allProjectsRanking;
+export const allProjectsDetailState = (state) => state.allProjects.allProjectsDetail;
 
 export const auctionedNfts = createSelector(nftBreakdownState, ( nfts ) => {
     if(!nfts.data) {
