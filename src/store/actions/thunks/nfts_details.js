@@ -1,7 +1,7 @@
 import { Axios, Canceler } from '../../../core/axios';
 import * as actions from '..';
 
-export const fetchnftsDetailsBreakdown = () => async (dispatch, getState) => {
+export const fetchNftsDetailsBreakdown = () => async (dispatch, getState) => {
   
   //access the state
   const state = getState();

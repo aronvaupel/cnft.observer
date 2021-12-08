@@ -5,6 +5,7 @@ import { createGlobalStyle } from "styled-components";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { filterCategories, filterStatus, filterItemsType, filterNftTitle } from '../../store/actions';
+import { Link } from "@reach/router";
 
 
 const GlobalStyles = createGlobalStyle`

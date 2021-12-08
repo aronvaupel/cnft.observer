@@ -38,6 +38,8 @@ import AllRecentlySold from './pages/AllRecentlySold';
 import AllHotCollections from './pages/AllHotCollections';
 import AllNews from './pages/AllNews';
 import AllProjects from './pages/AllProjectsRedux';
+import ProjectDetails from './pages/project-details';
+import CollectionDetails from './pages/collection-details';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -82,9 +84,11 @@ const app= () => (
         <AllUpcomingDrops path="/upcoming-cnft-drops/" />
         <AllRecentlySold path="/recently-sold-cnft/" />
         <AllHotCollections path="/collections-cnft/" />
+        <CollectionDetails path="/collections-cnft/:id/" />
         <AllNews path="/news-cnft/" />
-        <AllProjects path="/projects-cnft"/>
-        <ItemDetailPageRedux path="/cnft-details/:id"/>
+        <AllProjects path="/projects-cnft/"/>
+        <ProjectDetails path="/project-details/:id/"/>
+        <ItemDetailPageRedux path="/cnft-details/:id/"/>
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
         <Helpcenter path="/helpcenter" />

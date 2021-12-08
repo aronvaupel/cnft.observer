@@ -31,6 +31,8 @@ export const allHotCollectionsDetailState = (state) => state.allHotCollections.a
 export const allProjectsState = (state) => state.allProjects.allProjects;
 export const allProjectsRankingState = (state) => state.allProjects.allProjectsRanking;
 export const allProjectsDetailState = (state) => state.allProjects.allProjectsDetail;
+export const projectBreakdownState = (state) => state.NFT.nftBreakdown;
+export const collectionBreakdownState = (state) => state.NFT.nftBreakdown;
 
 export const auctionedNfts = createSelector(nftBreakdownState, ( nfts ) => {
     if(!nfts.data) {
@@ -48,7 +50,15 @@ export const nftFilter = createStructuredSelector({
     nftTitle: (state) => state.filters.filterNftTitle
 });
 
-export const nftItems = createSelector(nftFilter, nftBreakdownState, ( filters, nfts ) => {
+export const projectFilter = createStructuredSelector({
+    categories: (state) => state.filters.selectedCategories,
+    status: (state) => state.filters.selectedStatus,
+    itemsType: (state) => state.filters.selectedItemsType,
+    collections: (state) => state.filters.selectedCollections,
+    nftTitle: (state) => state.filters.filterNftTitle
+});
+
+export const nftItems = createSelector(projectFilter, projectBreakdownState, ( filters, nfts ) => {
     let { data } = nfts;
     const { categories, status, itemsType, collections, nftTitle } = filters;
     
@@ -77,4 +87,61 @@ export const nftItems = createSelector(nftFilter, nftBreakdownState, ( filters, 
     return data;
 });
 
+export const ProjectItems = createSelector(nftFilter, nftBreakdownState, ( filters, nfts ) => {
+    let { data } = nfts;
+    const { categories, status, itemsType, collections, nftTitle } = filters;
+    
+    if(!data) {
+        return [];
+    }
+
+    if(categories.size) {
+        data = data.filter( nft => categories.has(nft.category));
+    }
+    if(status.size) {
+        data = data.filter( nft => status.has(nft.status));
+    }
+    if(itemsType.size) {
+        data = data.filter( nft => itemsType.has(nft.item_type));
+    }
+    if(collections.size) {
+        data = data.filter( nft => collections.has(nft.collections));
+    }
+    if(nftTitle.trim().length) {
+        let pattern = new RegExp(`${nftTitle.trim()}`, 'gi');
+        console.log(pattern)
+        data = data.filter( nft => nft.title.match(pattern));
+    }
+
+    return data;
+});
+
+export const CollectionItems = createSelector(nftFilter, nftBreakdownState, ( filters, nfts ) => {
+    let { data } = nfts;
+    const { categories, status, itemsType, collections, nftTitle } = filters;
+    
+    if(!data) {
+        return [];
+    }
+
+    if(categories.size) {
+        data = data.filter( nft => categories.has(nft.category));
+    }
+    if(status.size) {
+        data = data.filter( nft => status.has(nft.status));
+    }
+    if(itemsType.size) {
+        data = data.filter( nft => itemsType.has(nft.item_type));
+    }
+    if(collections.size) {
+        data = data.filter( nft => collections.has(nft.collections));
+    }
+    if(nftTitle.trim().length) {
+        let pattern = new RegExp(`${nftTitle.trim()}`, 'gi');
+        console.log(pattern)
+        data = data.filter( nft => nft.title.match(pattern));
+    }
+
+    return data;
+});
 

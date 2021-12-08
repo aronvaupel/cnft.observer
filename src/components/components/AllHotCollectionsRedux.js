@@ -5,6 +5,7 @@ import * as actions from '../../store/actions/thunks';
 import { clearNfts, clearFilter } from '../../store/actions';
 import HotCollectionsCard from './HotCollectionsCard';
 import { fetchAllHotCollectionsBreakdown } from '../../store/actions/thunks';
+import { Link } from "@reach/router";
 
 //react functional component
 const AllHotCollectionsRedux = ({ showLoadMore = true, shuffle = false }) => {
@@ -34,6 +35,7 @@ const AllHotCollectionsRedux = ({ showLoadMore = true, shuffle = false }) => {
     return (
         <div className='row'>
             {nfts && nfts.map( (nft, index) => (
+           
                 <HotCollectionsCard nft={nft} key={index} onImgLoad={onImgLoad} clockTop={true} height={height} />
             ))}
             { showLoadMore && nfts.length <= 20 &&

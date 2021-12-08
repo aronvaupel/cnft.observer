@@ -201,6 +201,42 @@ export const getAllProjectsDetail = asyncAction(
     'nft/GET_ALLALLPROJECTS_DETAIL_FAIL'
 )();
 
+export const getProjectDetailsBreakdown = asyncAction(
+    'nft/GET_ALLPROJECTS',
+    'nft/GET_ALLPROJECTS_SUCCESS',
+    'nft/GET_ALLPROJECTS_FAIL'
+)();
+
+export const getProjectDetailsShowcase = asyncAction(
+    'nft/GET_PROJECTS_RANKING',
+    'nft/GET_PROJECTS_RANKING_SUCCESS',
+    'nft/GET_PROJECTS_RANKING_FAIL'
+)();
+
+export const getProjectDetailsDetail = asyncAction(
+    'nft/GET_PROJECTS_DETAIL',
+    'nft/GET_PROJECTS_DETAIL_SUCCESS',
+    'nft/GET_PROJECTS_DETAIL_FAIL'
+)();
+
+export const getCollectionDetailsBreakdown = asyncAction(
+    'nft/GET_COLLECTIONS',
+    'nft/GET_COLLECTIONS_SUCCESS',
+    'nft/GET_COLLECTIONS_FAIL'
+)();
+
+export const getCollectionDetailsShowcase = asyncAction(
+    'nft/GET_COLLECTIONS_RANKING',
+    'nft/GET_COLLECTIONS_RANKING_SUCCESS',
+    'nft/GET_COLLECTIONS_RANKING_FAIL'
+)();
+
+export const getCollectionDetailsDetail = asyncAction(
+    'nft/GET_COLLECTIONS_DETAIL',
+    'nft/GET_COLLECTIONS_DETAIL_SUCCESS',
+    'nft/GET_COLLECTIONS_DETAIL_FAIL'
+)();
+
 
 
 export const clearNfts = action('nft/CLEAR_ALL_NFTS')();
@@ -210,3 +246,17 @@ export const filterStatus = action('nft/FILTER_STATUS')();
 export const filterItemsType = action('nft/FILTER_ITEMS_TYPE')();
 export const filterCollections = action('nft/FILTER_COLLECTIONS')();
 export const filterNftTitle = action('nft/FILTER_NFT_TITLE')();
+
+export const filterProjectStatus = action('project/FILTER_PROJECT_STATUS')();
+export const filterProjectCollections = action('project/FILTER_PROJECT_COLLECTIONS')();
+export const filterProjectCategories = action('project/FILTER_PROJECT_CATEGORIES')();
+export const filterProjectItemsType = action('project/FILTER_PROJECT_ITEMS_TYPE')();
+
+export const clearProjects = action('project/CLEAR_PROJECTS')();
+
+export const filterCollectionStatus = action('collection/FILTER_COLLECTION_STATUS')();
+export const filterCollectionCollections = action('collection/FILTER_COLLECTION_COLLECTIONS')();
+export const filterCollectionCategories = action('collection/FILTER_COLLECTION_CATEGORIES')();
+export const filterCollectionItemsType = action('collection/FILTER_COLLECTION_ITEMS_TYPE')();
+
+export const clearCollections = action('collection/CLEAR_COLLECTIONS')();
