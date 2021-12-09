@@ -4738,3 +4738,64 @@ align-items: center;
 .item_info_like{
   padding-right: 0.5rem;
 }
+
+.wideWithMargin {
+  margin: 1rem;
+}
+
+.infoboxWrapper {
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+}
+
+.infobox{
+  border:#383A3E 1px solid; ;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin:0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #212428;
+}
+
+.filterbox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.filterboxHidden{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spacerForStickyFilters{
+  height: 85px;
+  background-color: transparent;
+  margin-bottom: 2rem;
+}
+
+.indicatorHeader{
+  font-size: 0.75rem;
+}
+
+.indicatorCounter {
+  font-size: 1.25rem;
+}
+
+.pictureStyling {
+  margin-top: 100px;
+  border-radius: 0 0 8px 8px;
+}
+
+.profileBorder{
+  border: 2px solid #fff;
+}

@@ -75,10 +75,10 @@ const Header= function() {
     const sticky = header.offsetTop;
     const scrollCallBack = window.addEventListener("scroll", () => {
         btn_icon(false);
-        if (window.pageYOffset > sticky) {
+        if (window.pageYOffset > sticky ) {
           header.classList.add("sticky");
           totop.classList.add("show");
-          
+       
         } else {
           header.classList.remove("sticky");
           totop.classList.remove("show");
@@ -90,6 +90,9 @@ const Header= function() {
         window.removeEventListener("scroll", scrollCallBack);
       };
     }, []);
+
+    
+
     return (
     <header id="myHeader" className='navbar white'>
      <div className='container'>

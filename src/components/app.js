@@ -1,5 +1,6 @@
 import React from 'react';
 import { Router, Location, Redirect } from '@reach/router';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import ScrollToTopBtn from './menu/ScrollToTop';
 import Header from './menu/header';
 import Home from './pages/home';
@@ -70,6 +71,7 @@ const PosedRouter = ({ children }) => (
 const app= () => (
   <div className="wraper">
   <GlobalStyles />
+  <ParallaxProvider>
     <Header/>
       <PosedRouter> 
        
@@ -117,7 +119,7 @@ const app= () => (
         </ScrollTop>
       </PosedRouter>
     <ScrollToTopBtn />
-    
+    </ParallaxProvider>
   </div>
 );
 export default app;

@@ -7,6 +7,17 @@ import { fetchAllProjectsRanking } from "../../store/actions/thunks";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { Link } from "@reach/router";
+import { createGlobalStyle } from 'styled-components';
+
+
+const GlobalStyles = createGlobalStyle`
+  .navbar {
+    border-bottom: solid 1px rgba(255, 255, 255, .1) !important;
+  }
+   header#myHeader.navbar.white {
+    background: #212428;
+  }
+`;
 
 const customStyles = {
   option: (base, state) => ({
@@ -76,6 +87,7 @@ const AllProjects = () => {
 
   return (
     <div>
+      <GlobalStyles/>
       <section
         id="drop-banner"
         className="jumbotron breadcumb center-elements fader"
