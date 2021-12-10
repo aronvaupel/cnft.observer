@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Location, Redirect } from '@reach/router';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ScrollToTopBtn from './menu/ScrollToTop';
-import Header from './menu/header';
+import Header from './menu/header-cnft-observer';
 import Home from './pages/home';
 import Home1 from './pages/home1';
 import Home2 from './pages/home2';

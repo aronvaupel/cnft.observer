@@ -12,8 +12,12 @@ import {
   filterProjectItemsType,
   filterProjectCollections,
 } from "../../store/actions";
+import { filterCategories, filterStatus, filterItemsType, filterNftTitle } from '../../store/actions';
+import { useMediaQuery } from "react-responsive";
 
-const CheckboxProjectDetails = ({ showMenu, setShowMenu, onClick }) => {
+
+const CheckboxProjectDetails = ({onClick }) => {
+  const isTablet = useMediaQuery({ query: "(max-width:1200px)" });
   const dispatch = useDispatch();
 
   const handleCategory = useCallback(
@@ -50,10 +54,9 @@ const CheckboxProjectDetails = ({ showMenu, setShowMenu, onClick }) => {
 
   return (
     <>
-      {showMenu ? (
-        <div>
-          <div className="spacerForStickyFilters"></div>
-         
+     
+         {!isTablet? ( <div className="spacerForStickyFilters"></div>):null}
+
           <div className="filterbox item_filter_group">
             <div>Filters</div>
             <img
@@ -62,6 +65,87 @@ const CheckboxProjectDetails = ({ showMenu, setShowMenu, onClick }) => {
               onClick={onClick}
             />
           </div>
+
+ <div className="filtergroup item_filter_group">
+            <form>
+              <fieldset>
+                <div>
+                  <input
+                    type="radio"
+                    id="recently"
+                    name="select"
+                    value="items"
+                    
+  
+                  />
+                  <label htmlFor="recently" className="radio">
+                    Items
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="low"
+                    name="select"
+                    value="activity"
+                   
+                  />
+                  <label htmlFor="low" className="radio">
+                    {" "}
+                    Activity
+                  </label>
+                </div>
+              
+              </fieldset>
+            </form>
+          </div>
+
+
+          <div className="filtergroup item_filter_group">
+            <form>
+              <fieldset>
+                <div>
+                  <input
+                    type="radio"
+                    id="recently"
+                    name="sort"
+                    value="recently"
+                    
+  
+                  />
+                  <label htmlFor="recently" className="radio">
+                    Recently listed
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="low"
+                    name="sort"
+                    value="low"
+                   
+                  />
+                  <label htmlFor="low" className="radio">
+                    {" "}
+                    Price: low to high
+                  </label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="high"
+                    name="sort"
+                    value="high"
+                    
+                  />
+                  <label htmlFor="high" className="radio">
+                    Price: high to low
+                  </label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
           <div className="item_filter_group">
             <h4>Select Categories</h4>
             <div className="de_form">
@@ -129,22 +213,9 @@ const CheckboxProjectDetails = ({ showMenu, setShowMenu, onClick }) => {
                 </div>
               ))}
             </div>
-          </div></div>
-        
-      ) : (
-        <>
-          <div className="spacerForStickyFilters"></div>
-          <div className="filterbox item_filter_group filterboxHidden">
-            <img
-              src="/img/ownPictures/arrow-right.png"
-              alt="Show filters"
-              onClick={onClick}
-            />
           </div>
         </>
-      )}
-    </>
-  );
+      ) 
 };
 
 export default memo(CheckboxProjectDetails);

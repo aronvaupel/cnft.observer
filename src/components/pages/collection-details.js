@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import ColumnCollectionDetailsRedux from "../components/ColumnCollectionDetailsRedux";
-import Footer from "../components/footer";
 import { createGlobalStyle } from "styled-components";
 import CheckboxCollectionDetails from "../components/CheckboxCollectionDetails";
 import Sticky from "react-sticky-el";

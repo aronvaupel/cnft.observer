@@ -112,13 +112,13 @@ const CheckboxCollectionDetails = ({ showMenu, setShowMenu, onClick }) => {
       ) : (
         <>
           <div className="spacerForStickyFilters"></div>
-          <div className="filterbox item_filter_group filterboxHidden">
+          
             <img
               src="/img/ownPictures/arrow-right.png"
               alt="Show filters"
               onClick={onClick}
             />
-          </div>
+          
         </>
       )}
     </>
