@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import ColumnCollectionDetailsRedux from "../components/ColumnCollectionDetailsRedux";
+import ColumnCollectionDetailsReduxNew from "../components/ColumnCollectionDetailsReduxNew";
 import { createGlobalStyle } from "styled-components";
-import CheckboxCollectionDetails from "../components/CheckboxCollectionDetails";
+import CheckboxCollectionDetailsNew from "../components/CheckboxCollectionDetailsNew";
 import Sticky from "react-sticky-el";
 import { Parallax } from "react-scroll-parallax";
 
@@ -69,31 +69,57 @@ const CollectionDetails = () => {
                     <div className="indicatorCounter">188</div>
                   </div>
                 </div>
+               <div>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="wideWithMargin">
+      <section className="itemsActivity">
+        <form>
+          <fieldset>
+            <input
+              type="radio"
+              id="items"
+              name="displayOptions"
+              value="items"
+             
+            />
+            <label htmlFor="displayOptions"  className="radio">
+              
+              <img src="/img/ownPictures/list.png"/>
+              Items</label>
+            <input
+              type="radio"
+              id="activity"
+              name="displayOptions"
+              value="activity"
+             
+            />
+            <label htmlFor="displayOptions"  className="radio">
+              <img src="/img/ownPictures/heartbeat.png"/>
+              Activity</label>
+          </fieldset>
+        </form>
+      </section>
+
+      
+
+      <section className="wideWithMargin removeTopPadding">
         <div className="row">
           <div className="col-md-3">
-            <Sticky topOffset={85} >
-              <CheckboxCollectionDetails
-                showMenu={showMenu}
-                setShowMenu={setShowMenu}
-                onClick={openMenu}
-              />
-            </Sticky>
+            <CheckboxCollectionDetailsNew />
           </div>
           <div className="col-md-9">
-             <div className="spacerForStickyFilters"></div>
-            <ColumnCollectionDetailsRedux />
+            <ColumnCollectionDetailsReduxNew />
           </div>
         </div>
       </section>
-
-     
     </div>
   );
 };

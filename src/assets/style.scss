@@ -4766,23 +4766,9 @@ img.img-rounded {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  margin:0;
 }
 
-.filterboxHidden {
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-
-
-
-.spacerForStickyFilters {
-  height: 85px;
-  background-color: transparent;
-  margin-bottom: 2rem;
-}
 
 .indicatorHeader {
   font-size: 0.75rem;
@@ -4801,25 +4787,103 @@ img.img-rounded {
   border: 2px solid #fff;
 }
 
-.radio input[type="radio"] + label::before {
-  position: absolute;
-  content: "";
-  display: inline-block;
-  font-family: "FontAwesome";
-  margin-right: 10px;
-  border: solid 2px rgba(255, 255, 255, 0.2);
-  width: 16px;
-  height: 16px;
-  margin-top: 5px;
-  left: 0;
-  font-size: 11px;
-  padding: 1px 3px 0 3px;
-  line-height: 15px;
-  border-radius: 4px;
+
+.removeTopPadding{
+  padding-top: 0 !important;
+  margin-top: 0;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
-.searchbar {
+
+.itemsActivity{
+  padding: 0;
+  border-bottom:  1px solid;
   display: flex;
-  width: 270px;
-  margin-bottom: 25px;
+  justify-content: center;
+}
+
+[type="radio"] {
+  appearance: none;
+  margin: .25rem;
+}
+
+.searchBar{
+  background-color:#46474b;
+  height: 45px;
+  border:  #46474b 1px solid;
+}
+.searchBarWrapper{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+  margin-left: 25px;
+  border: #383a3e 1px solid;
+  border-radius: 8px  ;
+  height: 60px;
+  background-color:#46474b;
+  padding: 10px;
+  width: 70%;
+}
+
+.thumbnailWrapper{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+  margin-left: 25px;
+  border: #383a3e 1px solid;
+  border-radius: 8px  ;
+  height: 60px;
+  background-color:#46474b;
+  padding: 10px;
+  width: 10%;
+}
+
+.filterWrapper{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height:60px;
+  margin-top: 10px;
+}
+
+
+
+.searchBarContainer{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ height:80px;
+ width: 100%;
+}
+
+
+.dropDownWrapper{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  margin-left: 25px;
+  border: #383a3e 1px solid;
+  border-radius: 8px  ;
+  height: 60px;
+  padding: 10px;
+  width: 20%;
+}
+
+button{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.refreshWrapper{
+  width: 5%;
+}
+
+.radio input[type="radio"]:checked{
+  border-bottom: solid 3px #212428;
 }

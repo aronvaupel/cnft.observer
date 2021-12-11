@@ -4,7 +4,6 @@ import { createGlobalStyle } from "styled-components";
 import CheckboxProjectsDetails from "../components/CheckboxProjectsDetails";
 import Sticky from "react-sticky-el";
 import { Parallax } from "react-scroll-parallax";
-import { useMediaQuery } from "react-responsive";
 
 const GlobalStyles = createGlobalStyle`
   .navbar {
@@ -16,14 +15,6 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const ProjectsDetails = ({ onCLick }) => {
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-  const isTablet = useMediaQuery({ query: "(max-width:12000px)" });
-  const [showMenu, setShowMenu] = useState(true);
-
-  const openMenu = () => {
-    setShowMenu((menu) => !menu);
-  };
-
   return (
     <div>
       <GlobalStyles />
@@ -57,30 +48,29 @@ const ProjectsDetails = ({ onCLick }) => {
                   <h4>Abstraction</h4>
                 </div>
 
-                {!isMobile ? (
-                  <div className="infoboxWrapper">
-                    <div className="infobox">
-                      <div className="indicatorHeader">FLOOR PRICE</div>
-                      <div className="indicatorCounter">2.20 SOL</div>
-                    </div>
-                    <div className="infobox">
-                      <div className="indicatorHeader">
-                        TOTAL VOLUME (ALL TIME, ALL MARKETPLACES)
-                      </div>
-                      <div className="indicatorCounter">7781.39 SOL</div>
-                    </div>
-                    <div className="infobox">
-                      <div className="indicatorHeader">
-                        AVG SALE PRICE (LAST 24HR)
-                      </div>
-                      <div className="indicatorCounter"> 1.99 SOL</div>
-                    </div>
-                    <div className="infobox">
-                      <div className="indicatorHeader"> LISTED COUNT</div>
-                      <div className="indicatorCounter">188</div>
-                    </div>
+                <div className="infoboxWrapper">
+                  <div className="infobox">
+                    <div className="indicatorHeader">FLOOR PRICE</div>
+                    <div className="indicatorCounter">2.20 SOL</div>
                   </div>
-                ) : null}
+                  <div className="infobox">
+                    <div className="indicatorHeader">
+                      TOTAL VOLUME (ALL TIME, ALL MARKETPLACES)
+                    </div>
+                    <div className="indicatorCounter">7781.39 SOL</div>
+                  </div>
+                  <div className="infobox">
+                    <div className="indicatorHeader">
+                      AVG SALE PRICE (LAST 24HR)
+                    </div>
+                    <div className="indicatorCounter"> 1.99 SOL</div>
+                  </div>
+                  <div className="infobox">
+                    <div className="indicatorHeader"> LISTED COUNT</div>
+                    <div className="indicatorCounter">188</div>
+                  </div>
+                </div>
+
                 <div>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -92,67 +82,46 @@ const ProjectsDetails = ({ onCLick }) => {
         </div>
       </section>
 
-      <>
-        {showMenu ? (
-          <section className="wideWithMargin">
-            <div className="row">
-              <div className="col-md-3">
-                {!isMobile ? (
-                  <Sticky topOffset={85}>
-                    <CheckboxProjectsDetails
-                      showMenu={showMenu}
-                      setShowMenu={setShowMenu}
-                      onClick={openMenu}
-                    />
-                  </Sticky>
-                ) : (
-                  <div className="col-md-3">
-                    <CheckboxProjectsDetails
-                      showMenu={showMenu}
-                      setShowMenu={setShowMenu}
-                      onClick={openMenu}
-                    />
-                  </div>
-                )}
-              </div>
-              <div className="col-md-9">
-                {!isTablet ? (
-                  <div className="spacerForStickyFilters"></div>
-                ) : null}
-
-                <ColumnProjectsDetailsReduxNew />
-              </div>
-            </div>
-          </section>
-        ) : (
-          <section className="wideWithMargin">
-            <div className="row">
-              <div className="col-md-3">
-                <Sticky topOffset={85}>
-                  <>
-                    {!isTablet ? (
-                      <div className="spacerForStickyFilters"></div>
-                    ) : null}
-                    <div className="filterbox item_filter_group filterboxHidden">
-                      <img
-                        src="/img/ownPictures/arrow-right.png"
-                        alt="Show filters"
-                        onClick={openMenu}
-                      />
-                    </div>
-                  </>
-                </Sticky>
-              </div>
-              <div className="col-md-9">
-                <div className="spacerForStickyFilters"></div>
-                <ColumnProjectsDetailsReduxNew />
-              </div>
-            </div>
-          </section>
-        )}
-      </>
+      <section className="itemsActivity">
+        <form>
+          <fieldset>
+            <input
+              type="radio"
+              id="items"
+              name="displayOptions"
+              value="items"
+             
+            />
+            <label htmlFor="displayOptions"  className="radio">
+              
+              <img src="/img/ownPictures/list.png"/>
+              Items</label>
+            <input
+              type="radio"
+              id="activity"
+              name="displayOptions"
+              value="activity"
+             
+            />
+            <label htmlFor="displayOptions"  className="radio">
+              <img src="/img/ownPictures/heartbeat.png"/>
+              Activity</label>
+          </fieldset>
+        </form>
+      </section>
 
       
+
+      <section className="wideWithMargin removeTopPadding">
+        <div className="row">
+          <div className="col-md-3">
+            <CheckboxProjectsDetails />
+          </div>
+          <div className="col-md-9">
+            <ColumnProjectsDetailsReduxNew />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
