@@ -4887,3 +4887,9 @@ button{
 .radio input[type="radio"]:checked{
   border-bottom: solid 3px #212428;
 }
+
+.flex {
+display:flex;
+align-items: center;
+justify-content: space-between;
+} 

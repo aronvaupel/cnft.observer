@@ -7,8 +7,7 @@ import { fetchAllProjectsRanking } from "../../store/actions/thunks";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { Link } from "@reach/router";
-import { createGlobalStyle } from 'styled-components';
-
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
   .navbar {
@@ -87,16 +86,11 @@ const AllProjects = () => {
 
   return (
     <div>
-      <GlobalStyles/>
-      <section
-        id="drop-banner"
-        className="jumbotron breadcumb center-elements fader"
-        style={{
-          backgroundImage: `url(${"/img/ownPictures/tree_cropped.jpg"})`,
-          backgroundSize: "cover",
-        }}
-      >
-        <div id="headline-adjust">
+      <GlobalStyles />
+      <div className="spacer-double"></div>
+      <div className="spacer-double"></div>
+      <div className="container">
+        <div id="headline-adjust" className="flex">
           <Reveal
             className="onStep"
             keyframes={fadeInUp}
@@ -106,37 +100,44 @@ const AllProjects = () => {
           >
             <h1 className="col-white outline">All Projects</h1>
           </Reveal>
-
           <Reveal
             className="onStep"
             keyframes={fadeInUp}
-            delay={600}
+            delay={300}
             duration={900}
             triggerOnce
           >
-            <p className="lead col-white outline">Get the total overview!</p>
-          </Reveal>
+          <div className="infoboxWrapper">
+            <div className="infobox">
+              <div className="indicatorHeader">FLOOR PRICE</div>
+              <div className="indicatorCounter">2.20 SOL</div>
+            </div>
+            <div className="infobox">
+              <div className="indicatorHeader">
+                TOTAL VOLUME (ALL TIME, ALL MARKETPLACES)
+              </div>
+              <div className="indicatorCounter">7781.39 SOL</div>
+            </div>
+            <div className="infobox">
+              <div className="indicatorHeader">AVG SALE PRICE (LAST 24HR)</div>
+              <div className="indicatorCounter"> 1.99 SOL</div>
+            </div>
+            <div className="infobox">
+              <div className="indicatorHeader"> LISTED COUNT</div>
+              <div className="indicatorCounter">188</div>
+            </div>
+          </div></Reveal>
         </div>
-      </section>
+      </div>
 
       <section className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="items_filter centerEl">
-              <div className="dropdownSelect one">
-                <Select
-                  className="select1"
-                  styles={customStyles}
-                  menuContainerStyle={{ zIndex: 999 }}
-                  defaultValue={options[0]}
-                  options={options}
-                />
-              </div>
-            </div>
+            <div className="items_filter centerEl"></div>
             <table className="table de-table table-rank">
               <thead>
                 <tr>
-                  <th scope="col">Collection</th>
+                  <th scope="col">Project</th>
                   <th scope="col">Volume</th>
                   <th scope="col">24h %</th>
                   <th scope="col">7d %</th>
@@ -149,36 +150,33 @@ const AllProjects = () => {
               <tbody>
                 {allProjects &&
                   allProjects.map((author, index) => (
-                    
-                     
-                      <tr key={index}>
-                        <th scope="row"><Link
-                      to={`/project-details/:${author.username}`}
-                      style={{
-                        textDecoration: "none",
-                        color: "#fff"
-                      }}
-                    >
+                    <tr key={index}>
+                      <th scope="row">
+                        <Link
+                          to={`/project-details/:${author.username}`}
+                          style={{
+                            textDecoration: "none",
+                            color: "#fff",
+                          }}
+                        >
                           <div className="coll_list_pp">
                             <img className="lazy" src={author.avatar} alt="" />
                             <i className="fa fa-check"></i>
                           </div>
                           {author.username}
-                            </Link></th>
-                        <td>{author.volume}</td>
-                        <td
-                          className={author["24h"] < 0 ? "d-min" : "d-plus"}
-                        >{`${author["24h"] < 0 ? "" : "+"}${
-                          author["24h"]
-                        }%`}</td>
-                        <td
-                          className={author["7d"] < 0 ? "d-min" : "d-plus"}
-                        >{`${author["7d"] < 0 ? "" : "+"}${author["7d"]}%`}</td>
-                        <td>{author.floor_price}</td>
-                        <td>{author.owners}k</td>
-                        <td>{author.assets}k</td>
-                      </tr>
-                
+                        </Link>
+                      </th>
+                      <td>{author.volume}</td>
+                      <td
+                        className={author["24h"] < 0 ? "d-min" : "d-plus"}
+                      >{`${author["24h"] < 0 ? "" : "+"}${author["24h"]}%`}</td>
+                      <td className={author["7d"] < 0 ? "d-min" : "d-plus"}>{`${
+                        author["7d"] < 0 ? "" : "+"
+                      }${author["7d"]}%`}</td>
+                      <td>{author.floor_price}</td>
+                      <td>{author.owners}k</td>
+                      <td>{author.assets}k</td>
+                    </tr>
                   ))}
               </tbody>
             </table>
